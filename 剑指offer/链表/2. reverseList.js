@@ -15,7 +15,7 @@ function ReverseList( head ) {
     let prev = null
     let cur = head
     while(cur){
-        [cur.next, prev, cur] = [prev, cur, cur.next] // 转当前节点的next指向prev
+        [cur.next, prev, cur] = [prev, cur, cur.next] // 转当前节点（cur）的next箭头指向prev 
     }
     return prev
     // 时间复杂度：O(n)，其中 n 是链表的长度。需要遍历链表一次
@@ -38,9 +38,9 @@ function ReverseList( head ) {
     // if(!head) return head // 空链表情况
     // if(!head.next) return head
     // let last = ReverseList(head.next) // 到last，也就是newHead的first
-    // head.next.next = head // 改变当前节点的下一个节点的next指向，为当前节点
-    // head.next = null // 当前节点的next指向空
+    // head.next.next = head // 改变当前节点的下一个节点的next指向，为当前节点，相当于next指向翻转
+    // head.next = null // 当前节点的next指向空，相当于再删除自己的next指向
     // return last
     // // 时间复杂度：O(n)，其中 n 是链表的长度。需要对链表的每个节点进行反转操作
-    // // 空间复杂度：O(n)，其中 n 是链表的长度。空间复杂度主要取决于递归调用的栈空间，最多为 n 层。s
+    // // 空间复杂度：O(n)，其中 n 是链表的长度。空间复杂度主要取决于递归调用的栈空间，最多为 n 层。
 }

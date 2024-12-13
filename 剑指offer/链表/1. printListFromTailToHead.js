@@ -14,6 +14,8 @@
  * 输入：{1,2,3}
  * 返回值：[3,2,1]
  */
+
+// 时间复杂度O(N)，空间复杂度O(N)。各方法均如此
 function printListFromTailToHead(head) {
     // 解法1：数组API unshift()
     let arr = []
@@ -22,7 +24,6 @@ function printListFromTailToHead(head) {
         head = head.next
     }
     return arr
-    // // 时间复杂度O(N)，空间复杂度O(N)。
 
     // // 解法2：数组API reverse()
     // let arr = []
@@ -31,7 +32,6 @@ function printListFromTailToHead(head) {
     //     head = head.next
     // }
     // return arr.reverse()
-    // // 时间复杂度O(N)，空间复杂度O(N)。
 
     // // 解法3：递归，回溯特性
     // let arr = []
@@ -43,7 +43,6 @@ function printListFromTailToHead(head) {
     // }
     // visit(head)
     // return arr
-    // // 时间复杂度O(N)，空间复杂度O(N)。
 
     // // 解法4 栈
     // let stack = []
@@ -57,5 +56,4 @@ function printListFromTailToHead(head) {
     //     arr.push(node)
     // }
     // return arr
-    // // 时间复杂度O(N)，空间复杂度O(N)。
 }
