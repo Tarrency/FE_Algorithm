@@ -3,17 +3,17 @@
 /**
  * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
  *
- * 
- * @param pHead ListNode类 
+ *
+ * @param pHead ListNode类
  * @return ListNode类
- * 
- * 
+ *
+ *
  * 输入：{1,2},{3,4,5}
  * 返回值：3
  */
 function EntryNodeOfLoop(pHead) {
     // 解法1：set找重
-    let set = new Set()
+    const set = new Set()
     while (pHead) {
         if (set.has(pHead)) {
             return pHead
@@ -56,9 +56,9 @@ function EntryNodeOfLoop(pHead) {
             break
         }
     }
-    if(!fast || !fast.next) return null // 有种情况是链表没环，也走到头了
+    if (!fast || !fast.next) return null // 有种情况是链表没环，也走到头了
     slow = pHead
-    while (fast !==slow) {
+    while (fast !== slow) {
         fast = fast.next
         slow = slow.next
         if (fast === slow) {

@@ -2,19 +2,19 @@
 /**
  * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
  *
- * 
- * @param pHead1 ListNode类 
- * @param pHead2 ListNode类 
+ *
+ * @param pHead1 ListNode类
+ * @param pHead2 ListNode类
  * @return ListNode类
- * 
- * 
+ *
+ *
  * 输入：{1,2,3},{4,5},{6,7}
  * 返回值：{6,7}
  * 空间复杂度 O(1)，时间复杂度 O(n)
  */
 function FindFirstCommonNode(pHead1, pHead2) {
     // 解法1：set找重
-    let set = new Set()
+    const set = new Set()
     while (pHead1) {
         set.add(pHead1)
         pHead1 = pHead1.next

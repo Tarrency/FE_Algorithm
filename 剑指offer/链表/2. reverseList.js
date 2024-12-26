@@ -2,20 +2,20 @@
 /**
  * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
  *
- * 
+ *
  * @param head ListNode类
  * @return ListNode类
- * 
- * 
+ *
+ *
  * 输入：{1,2,3}
  * 返回值：{3,2,1}
  */
-function ReverseList( head ) {
+function ReverseList(head) {
     // 解法1：ES6的赋值解构(迭代)
     let prev = null
     let cur = head
-    while(cur){
-        [cur.next, prev, cur] = [prev, cur, cur.next] // 转当前节点（cur）的next箭头指向prev 
+    while (cur) {
+        [cur.next, prev, cur] = [prev, cur, cur.next] // 转当前节点（cur）的next箭头指向prev
     }
     return prev
     // 时间复杂度：O(n)，其中 n 是链表的长度。需要遍历链表一次

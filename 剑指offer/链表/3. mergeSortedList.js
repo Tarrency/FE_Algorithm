@@ -2,12 +2,12 @@
 /**
  * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
  *
- * 
- * @param pHead1 ListNode类 
- * @param pHead2 ListNode类 
+ *
+ * @param pHead1 ListNode类
+ * @param pHead2 ListNode类
  * @return ListNode类
- * 
- * 
+ *
+ *
  * 输入：{1,3,5},{2,4,6}
  * 返回值：{1,2,3,4,5,6}
  */
@@ -26,13 +26,13 @@ function Merge(pHead1, pHead2) {
     // 空间复杂度：O(n+m)，消耗栈空间，栈空间的大小取决于递归调用的深度。结束递归调用时 mergeTwoLists 函数最多调用 n+m 次
 
     // 解法2：迭代
-    //（1）新建一个空的表头后面连接两个链表排序后的结点。
-    //（2）遍历两个链表都不为空的情况，取较小值添加在新的链表后面，每次只把被添加的链表的指针后移。
-    //（3）遍历到最后肯定有一个链表还有剩余的结点，它们的值将大于前面所有的，直接连在新的链表后面即可。
+    // （1）新建一个空的表头后面连接两个链表排序后的结点。
+    // （2）遍历两个链表都不为空的情况，取较小值添加在新的链表后面，每次只把被添加的链表的指针后移。
+    // （3）遍历到最后肯定有一个链表还有剩余的结点，它们的值将大于前面所有的，直接连在新的链表后面即可。
     if (!pHead1) return pHead2
     if (!pHead2) return pHead1
 
-    let head = new ListNode(-1)
+    const head = new ListNode(-1)
     let cur = head
 
     while (pHead1 && pHead2) {
