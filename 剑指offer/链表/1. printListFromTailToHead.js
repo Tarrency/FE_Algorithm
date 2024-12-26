@@ -1,16 +1,16 @@
 // 从尾到头打印链表
-/*function ListNode(x){
+/* function ListNode(x){
     this.val = x;
     this.next = null;
 }*/
 /**
  * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
  *
- * 
- * @param head ListNode类 
- * @return numbers int整型一维数组 
- * 
- * 
+ *
+ * @param head ListNode类
+ * @return numbers int整型一维数组
+ *
+ *
  * 输入：{1,2,3}
  * 返回值：[3,2,1]
  */
@@ -18,7 +18,7 @@
 // 时间复杂度O(N)，空间复杂度O(N)。各方法均如此
 function printListFromTailToHead(head) {
     // 解法1：数组API unshift()
-    let arr = []
+    const arr = []
     while (head) {
         arr.unshift(head.val)
         head = head.next
