@@ -70,7 +70,7 @@ function FindKthToTail(pHead, k) {
     // 空间复杂度 O(n)，时间复杂度 O(n)
 
     // 解法4：正向数组索引
-    let p = pHead, tmpArr = []
+    let p = pHead; const tmpArr = []
     while (p) {
         tmpArr.push(p)
         p = p.next
@@ -79,7 +79,7 @@ function FindKthToTail(pHead, k) {
     // 空间复杂度 O(n)，时间复杂度 O(n)
 
     // 解法5：索引
-    let len = 0, temp = pHead
+    let len = 0; let temp = pHead
     while (temp) {
         temp = temp.next
         len++
