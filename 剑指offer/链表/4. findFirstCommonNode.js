@@ -31,7 +31,7 @@ function FindFirstCommonNode(pHead1, pHead2) {
     // 解法2:双指针，快慢指针，总会遇到
     let p1 = pHead1
     let p2 = pHead2
-    while (p1 != p2) {
+    while (p1 !== p2) {
         p1 = (p1 ? p1.next : pHead2) // p1走完了从头走(pHead2)
         p2 = (p2 ? p2.next : pHead1)
     }

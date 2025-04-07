@@ -18,8 +18,22 @@ function deleteDuplication(pHead) {
 }
 // 时间复杂度O(n),空间复杂度O(1)
 
-// 删除排序链表中的重复元素 II,只留下不同数字
+// 解法2，递归
+var deleteDuplicates = function(head) {
+    if (!head || !head.next) return head
+    if (head.val === head.next.val) {
+        while (head.next && head.next.val === head.val) head.next = head.next.next
+        return deleteDuplicates(head.next)
+    } else {
+        head.next = deleteDuplicates(head.next)
+    }
+    return head
+}
+// 时间复杂度O(n),空间复杂度O(n)
+
+// 删除排序链表中的重复元素 II
 // 输入：{1,2,3,3,4,4,5},返回值：{1,2,3,4,5}
+// 解法1 迭代
 // function deleteDuplication(pHead) {
 //   if (!pHead) return pHead
 //   let node = pHead
@@ -33,3 +47,17 @@ function deleteDuplication(pHead) {
 //   return pHead
 // }
 // 时间复杂度O(n),空间复杂度O(1)
+
+// 解法2 递归
+// var deleteDuplicates = function(head) {
+//     if (head === null || head.next === null) return head
+//     if (head.val === head.next.val) {
+//         while (head.next && head.next.val === head.val) head.next = head.next.next
+//         // head.next = head.next.next
+//         return deleteDuplicates(head)
+//     } else {
+//         head.next = deleteDuplicates(head.next)
+//     }
+//     return head
+// }
+

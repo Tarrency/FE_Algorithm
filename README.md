@@ -9,3 +9,4 @@
 6. [链表中倒数第k个节点](剑指offer/链表/6.%20FindKthToTail.js)
 7. [复杂链表的复制](剑指offer/链表/7.%20RandomListNode.js)
 8. [删除排序链表中的重复节点](剑指offer/链表/8.%20deleteDuplication.js)
+9. [删除排序链表中的重复节点](剑指offer/链表/9.%20deleteNode.js)
