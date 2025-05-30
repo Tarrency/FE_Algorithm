@@ -18,17 +18,19 @@ function deleteDuplication(pHead) {
 }
 // 时间复杂度O(n),空间复杂度O(1)
 
-// 解法2，递归
-var deleteDuplicates = function(head) {
-    if (!head || !head.next) return head
-    if (head.val === head.next.val) {
-        while (head.next && head.next.val === head.val) head.next = head.next.next
-        return deleteDuplicates(head.next)
-    } else {
-        head.next = deleteDuplicates(head.next)
-    }
-    return head
-}
+// 解法2 递归
+// var deleteDuplicates = function(head) {
+//     if (head === null || head.next === null) return head
+//     if (head.val === head.next.val) {
+//         while (head.next && head.next.val === head.val) head.next = head.next.next
+//         // head.next = head.next.next
+//         return deleteDuplicates(head)
+//     } else {
+//         head.next = deleteDuplicates(head.next)
+//     }
+//     return head
+// }
+
 // 时间复杂度O(n),空间复杂度O(n)
 
 // 删除排序链表中的重复元素 II
@@ -48,16 +50,15 @@ var deleteDuplicates = function(head) {
 // }
 // 时间复杂度O(n),空间复杂度O(1)
 
-// 解法2 递归
-// var deleteDuplicates = function(head) {
-//     if (head === null || head.next === null) return head
-//     if (head.val === head.next.val) {
-//         while (head.next && head.next.val === head.val) head.next = head.next.next
-//         // head.next = head.next.next
-//         return deleteDuplicates(head)
-//     } else {
-//         head.next = deleteDuplicates(head.next)
-//     }
-//     return head
-// }
+// 解法2，递归
+var deleteDuplicates = function(head) {
+    if (!head || !head.next) return head
+    if (head.val === head.next.val) {
+        while (head.next && head.next.val === head.val) head.next = head.next.next
+        return deleteDuplicates(head.next)
+    } else {
+        head.next = deleteDuplicates(head.next)
+    }
+    return head
+}
 

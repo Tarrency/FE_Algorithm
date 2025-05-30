@@ -1,3 +1,11 @@
+/*
+ * @Author: wangqi01 13693607080@163.com
+ * @Date: 2024-09-09 09:38:41
+ * @LastEditors: wangqi01 13693607080@163.com
+ * @LastEditTime: 2025-05-28 10:17:39
+ * @FilePath: \FE_Algorithm\剑指offer\链表\5. EntryNodeOfLoop.js
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 
 // 链表中环的入口结点
 /**
@@ -23,17 +31,6 @@ function EntryNodeOfLoop(pHead) {
     }
     return null
     // 空间复杂度 O(n)，时间复杂度 O(n)
-
-    // 解法2：标记法
-    while (pHead) {
-        if (pHead.flag) {
-            return pHead
-        }
-        pHead.flag = true
-        pHead = pHead.next
-    }
-    return null
-    // 空间复杂度 O(1)，时间复杂度 O(n)
 
     // 解法2：标记法
     while (pHead) {
