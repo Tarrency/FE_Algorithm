@@ -23,6 +23,9 @@
 //     return Math.max(left, right) + 1
 // }
 
+// 时间复杂度：O(n)
+// 空间复杂度：O(h)，其中 h 是树的高度，最坏情况下为 O(n)。
+
 // 解法2：BFS 广度遍历
 // function TreeDepth(pRoot) {
 //     if (!pRoot) return 0
@@ -46,6 +49,9 @@
 //     return res
 // }
 
+// 时间复杂度：O(n)
+// 空间复杂度：O(w)，w是二叉树的最大宽度（即最多一层的节点数）
+
 // 解法3：前中后序遍历
 function TreeDepth(pRoot) {
     let res = 0
@@ -63,3 +69,5 @@ function TreeDepth(pRoot) {
     visit(pRoot)
     return res
 }
+// 时间复杂度：O(n)
+// 空间复杂度：O(h)，其中 h 是树的高度，最坏情况下为 O(n)

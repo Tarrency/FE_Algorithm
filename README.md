@@ -13,4 +13,5 @@
 
 ## 二叉树
 1. [二叉树的深度](剑指offer/二叉树/1.%20TreeDepth.js)
-1. [二叉搜索树的第k个节点](剑指offer/二叉树/1.%20TreeDepth.js)
+2. [二叉搜索树的第k个节点](剑指offer/二叉树/2.%20KthNode.js)
+3. [重建二叉树](剑指offer/二叉树/3.%20reConstructBinaryTree.js)
