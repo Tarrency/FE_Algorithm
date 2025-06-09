@@ -1,3 +1,11 @@
+<!--
+ * @Author: wangqi01 13693607080@163.com
+ * @Date: 2024-08-30 13:53:05
+ * @LastEditors: wangqi01 13693607080@163.com
+ * @LastEditTime: 2025-06-09 14:24:01
+ * @FilePath: \FE_Algorithm\README.md
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 # 剑指 Offer
 
 ## 链表
@@ -15,3 +23,6 @@
 1. [二叉树的深度](剑指offer/二叉树/1.%20TreeDepth.js)
 2. [二叉搜索树的第k个节点](剑指offer/二叉树/2.%20KthNode.js)
 3. [重建二叉树](剑指offer/二叉树/3.%20reConstructBinaryTree.js)
+4. [二叉树的镜像](剑指offer/二叉树/4.%20Mirror.js)
+5. [树的子结构](剑指offer/二叉树/5.%20HasSubTree.js)
+6. [从上往下打印二叉树](剑指offer/二叉树/5.%20PrintFromTopToBottoms.js)
