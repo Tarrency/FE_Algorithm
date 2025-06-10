@@ -25,4 +25,5 @@
 3. [重建二叉树](剑指offer/二叉树/3.%20reConstructBinaryTree.js)
 4. [二叉树的镜像](剑指offer/二叉树/4.%20Mirror.js)
 5. [树的子结构](剑指offer/二叉树/5.%20HasSubTree.js)
-6. [从上往下打印二叉树](剑指offer/二叉树/5.%20PrintFromTopToBottoms.js)
+6. [从上往下打印二叉树](剑指offer/二叉树/6.%20PrintFromTopToBottoms.js)
+7. [二叉树的后续遍历序列](剑指offer/二叉树/7.%20VerifySquenceOfBST.js)
