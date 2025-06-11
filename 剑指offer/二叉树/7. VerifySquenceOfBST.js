@@ -2,7 +2,7 @@
  * @Author: wangqi01 13693607080@163.com
  * @Date: 2025-06-09 14:30:20
  * @LastEditors: wangqi01 13693607080@163.com
- * @LastEditTime: 2025-06-10 18:16:14
+ * @LastEditTime: 2025-06-11 11:14:42
  * @FilePath: \FE_Algorithm\剑指offer\二叉树\7. VerifySquenceOfBST.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -34,6 +34,20 @@ var verifyPostorder = function(postorder) {
     verifyPostorder(rightTree)
     )
 }
+// 时间复杂度为 O(n²)，因为每次递归都需要遍历数组来找到分界点，并且每次递归都会创建新的数组切片。
+// 每次递归都会创建新的数组切片，空间复杂度也是 O(n²)在最坏情况下。
+
+// var verifyPostorder = function(postorder) {
+//     if (postorder.length <= 2) return true
+
+//     const root = postorder[postorder.length - 1]
+//     const idx = postorder.findIndex((item) => item > root)
+//     const left = postorder.slice(0, idx)
+//     const right = postorder.slice(idx, -1)
+//     if (Math.min(root, ...right) !== root) return false
+
+//     return verifyPostorder(left) && verifyPostorder(right)
+// }
 
 // var verifyPostorder = function(postorder) {
 //     // 左闭右闭区间
@@ -53,6 +67,8 @@ var verifyPostorder = function(postorder) {
 //     }
 //     return dfs(0, postorder.length - 1)
 // }
+// 空间复杂度是 O(n)。
+// 时间复杂度 O(n²)，因为每次递归都需要遍历当前区间的所有元素来验证性质
 
 // var verifyPostorder = function(postorder) {
 //     // 后续遍历的顺序是左右根   反向遍历 那就是根右左--大致
@@ -69,8 +85,13 @@ var verifyPostorder = function(postorder) {
 //     }
 //     return true
 // }
+// 时间复杂度 O(n)，空间复杂度 O(n)
+
 // [4,6,5,9,8]
-// 反向遍历模拟的是 根 -> 右 -> 左 的顺序（类似于前序遍历的变种）。
+// 反向遍历模拟的是 根 -> 右 -> 左 的顺序（类似于前序遍历的变种）。 中 大 小
 // stack 存储的是当前路径的右子树节点。
 // root 表示当前节点的父节点约束（即当前节点的值不能超过 root）。
 // 如果遇到 postorder[i] > root，说明违反了 BST 的性质（左子树 < 根 < 右子树），直接返回 false。
+
+// 维护一个递增栈，存储可能的右子树根节点。
+// 当遇到下降时（当前节点比栈顶小），说明进入了左子树，此时弹出比它大的所有节点，并记录最后一个弹出的节点作为当前子树的根。

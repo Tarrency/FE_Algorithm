@@ -27,3 +27,4 @@
 5. [树的子结构](剑指offer/二叉树/5.%20HasSubTree.js)
 6. [从上往下打印二叉树](剑指offer/二叉树/6.%20PrintFromTopToBottoms.js)
 7. [二叉树的后续遍历序列](剑指offer/二叉树/7.%20VerifySquenceOfBST.js)
+8. [二叉搜索树与双向链表](剑指offer/二叉树/8.%20Convert.js)
