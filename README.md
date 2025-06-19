@@ -2,7 +2,7 @@
  * @Author: wangqi01 13693607080@163.com
  * @Date: 2024-08-30 13:53:05
  * @LastEditors: wangqi01 13693607080@163.com
- * @LastEditTime: 2025-06-12 15:28:10
+ * @LastEditTime: 2025-06-19 15:40:43
  * @FilePath: \FE_Algorithm\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -30,3 +30,5 @@
 8. [二叉搜索树与双向链表](剑指offer/二叉树/8.%20Convert.js)
 9. [判断是不是平衡二叉树](剑指offer/二叉树/9.%20IsBalanced_Solution.js)
 10. [二叉树的下一个结点](剑指offer/二叉树/10.%20GetNext.js)
+11. [把二叉树打印成多行](剑指offer/二叉树/11.%20Print.js)
+12. [序列化二叉树](剑指offer/二叉树/12.%20Serialize.js)
