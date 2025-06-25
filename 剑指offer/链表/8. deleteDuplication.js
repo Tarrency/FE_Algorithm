@@ -1,3 +1,11 @@
+/*
+ * @Author: wangqi01 13693607080@163.com
+ * @Date: 2025-04-02 17:33:34
+ * @LastEditors: wangqi01 13693607080@163.com
+ * @LastEditTime: 2025-06-25 17:44:31
+ * @FilePath: \FE_Algorithm\剑指offer\链表\8. deleteDuplication.js
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 // 删除排序链表中的重复节点
 // 输入：{1,2,3,3,4,4,5},返回值：{1,2,5}
 // 解法1，改变next指向直接删除
@@ -36,17 +44,20 @@ function deleteDuplication(pHead) {
 // 删除排序链表中的重复元素 II
 // 输入：{1,2,3,3,4,4,5},返回值：{1,2,3,4,5}
 // 解法1 迭代
-// function deleteDuplication(pHead) {
-//   if (!pHead) return pHead
-//   let node = pHead
-//   while (node.next) { // 有next才判断相等
-//       if (node.next.val === node.val) {
-//           node.next = node.next.next
-//       } else {
-//           node = node.next
-//       }
-//   }
-//   return pHead
+// var deleteDuplicates = function(head) {
+//     let cur = head
+//     while (cur && cur.next) {
+//         if (cur.next.val === cur.val) {
+//             // cur.next = cur.next.next
+//             const x = cur.val
+//             while (cur.next && cur.next.val === x) {
+//                 cur.next = cur.next.next
+//             }
+//         } else {
+//             cur = cur.next
+//         }
+//     }
+//     return head
 // }
 // 时间复杂度O(n),空间复杂度O(1)
 

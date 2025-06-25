@@ -17,7 +17,7 @@
 
 // 时间复杂度O(N)，空间复杂度O(N)。各方法均如此
 function printListFromTailToHead(head) {
-    // 解法1：数组API unshift()
+    // 解法1：数组API unshift()，正向遍历，头插数组
     const arr = []
     while (head) {
         arr.unshift(head.val)
@@ -25,7 +25,7 @@ function printListFromTailToHead(head) {
     }
     return arr
 
-    // // 解法2：数组API reverse()
+    // // 解法2：数组API reverse()，先存后翻
     // let arr = []
     // while(head){
     //     arr.push(head.val)
@@ -33,7 +33,7 @@ function printListFromTailToHead(head) {
     // }
     // return arr.reverse()
 
-    // // 解法3：递归，回溯特性
+    // // 解法3：递归，回溯特性，递归到底，回溯存值
     // let arr = []
     // function visit(node){
     //     if(node){
@@ -44,7 +44,7 @@ function printListFromTailToHead(head) {
     // visit(head)
     // return arr
 
-    // // 解法4 栈
+    // // 解法4 栈，模拟栈实现逆序
     // let stack = []
     // while(head){
     //     stack.push(head.val)

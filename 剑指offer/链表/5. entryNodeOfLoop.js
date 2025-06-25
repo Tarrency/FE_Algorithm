@@ -1,12 +1,3 @@
-/*
- * @Author: wangqi01 13693607080@163.com
- * @Date: 2024-09-09 09:38:41
- * @LastEditors: wangqi01 13693607080@163.com
- * @LastEditTime: 2025-05-28 10:17:39
- * @FilePath: \FE_Algorithm\剑指offer\链表\5. EntryNodeOfLoop.js
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- */
-
 // 链表中环的入口结点
 /**
  * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可

@@ -12,6 +12,7 @@
  */
 function ReverseList(head) {
     // 解法1：ES6的赋值解构(迭代)
+    // 用双指针（prev 和 cur）边移动边反转指针方向，最终 prev 指向新头节点
     let prev = null
     let cur = head
     while (cur) {
@@ -35,6 +36,7 @@ function ReverseList(head) {
     // // 空间复杂度：O(1)
 
     // // 解法3：递归
+    // // 递归到链表末尾，然后在回溯过程中逐节点反转指针方向，最终返回新的头节点（原链表的尾节点）
     // if(!head) return head // 空链表情况
     // if(!head.next) return head
     // let last = ReverseList(head.next) // 到last，也就是newHead的first

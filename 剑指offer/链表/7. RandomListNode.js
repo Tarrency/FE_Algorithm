@@ -1,12 +1,11 @@
 
-// 复杂链表的复制
-// 复制值、next指向、random指向
+// 复杂链表的复制（值、next指向、random指向）
 function RandomListNode(x) {
     this.val = x
     this.next = null
     this.random = null
 }
-// 解法1：map的key值存储旧node，value值存储新node，返回value
+// 解法1：Map 存储原节点到拷贝节点的映射，map的key值存储旧node，value值存储新node，返回value
 function Clone(head) {
     if (!head) return head
     let node = head

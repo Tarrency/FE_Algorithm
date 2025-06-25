@@ -1,18 +1,10 @@
-/*
- * @Author: wangqi01 13693607080@163.com
- * @Date: 2024-12-26 10:37:40
- * @LastEditors: wangqi01 13693607080@163.com
- * @LastEditTime: 2025-05-28 14:26:34
- * @FilePath: \FE_Algorithm\剑指offer\链表\6. FindKthToTail.js
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- */
+// 链表中倒数第k个节点
 /*
  * function ListNode(x){
  *   this.val = x;
  *   this.next = null;
  * }
  */
-// 链表中倒数第k个节点
 /**
  * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
  *

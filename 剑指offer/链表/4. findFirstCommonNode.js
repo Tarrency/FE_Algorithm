@@ -28,7 +28,7 @@ function FindFirstCommonNode(pHead1, pHead2) {
     return null
     // 空间复杂度 O(n)，时间复杂度 O(n)
 
-    // 解法2:双指针，快慢指针，总会遇到
+    // 解法2:双指针，快慢指针，交替遍历两链表
     let p1 = pHead1
     let p2 = pHead2
     // 两个都不等，则都走到null的时候相等
