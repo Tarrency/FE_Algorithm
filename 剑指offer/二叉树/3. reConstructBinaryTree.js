@@ -1,17 +1,12 @@
 /*
- * @Author: wangqi01 13693607080@163.com
- * @Date: 2025-06-03 16:29:55
- * @LastEditors: wangqi01 13693607080@163.com
- * @LastEditTime: 2025-06-04 16:55:52
- * @FilePath: \FE_Algorithm\剑指offer\二叉树\3. reConstructBinaryTree.js
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- */
-/*
  * function TreeNode(x) {
  *   this.val = x;
  *   this.left = null;
  *   this.right = null;
  * }
+ */
+/*
+ * 左节点数一定是p，但有节点数不一定是p，可能是p，可能比p大，因为中序遍历的根节点前面全是左节点，就是p个节点
  */
 /**
  * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
@@ -39,39 +34,29 @@ function reConstructBinaryTree(preOrder, vinOrder) {
 //     if (!pre.length || !vin.length) return null
 //     const root = new TreeNode(pre.shift())
 //     const index = vin.indexOf(root.val)
-//     root.left = reConstructBinaryTree(pre, vin.slice(0, index))
-//     root.right = reConstructBinaryTree(pre, vin.slice(index + 1))
+//     root.left = reConstructBinaryTree(pre, vin.slice(0, index)) // pre 已经被 shift() 移除根节点，剩下的部分 前 index 个节点就是左子树的前序遍历。递归时，pre 会继续被 shift() 消耗，直到左子树构建完成。
+//     root.right = reConstructBinaryTree(pre, vin.slice(index + 1)) // 左子树的前序遍历已经被前面的递归消耗掉了，所以剩下的 pre 自然就是 右子树的前序遍历。
 //     return root
 // }
 
 // 中序和后续构造二叉树
 // var buildTreePost = function(inorder, postorder) {
-//     //
 //     if (!inorder.length || !postorder.length) return null
-//     //
 //     const node = new TreeNode(postorder.pop())
-//     //
 //     const p = inorder.indexOf(node.val)
-//     // 需要注意的是由于遍历顺序的不同，此处的postorder也应该被p分成两部分
-//     // 画图看看就能发现
-//     node.right = buildTree(inorder.slice(p + 1), postorder.slice(p))
+//     node.right = buildTree(inorder.slice(p + 1), postorder.slice(p)) // 已经pop掉最末尾的根节点了
 //     node.left = buildTree(inorder.slice(0, p), postorder.slice(0, p))
-//     //
 //     return node
 // }
 
 // var buildTreePost = function(inorder, postorder) {
 //     if (!inorder.length || !postorder.length) return null
-
-//     // 改用 postorder[postorder.length - 1] 代替 pop()
 //     const rootVal = postorder[postorder.length - 1]
 //     const node = new TreeNode(rootVal)
 //     const p = inorder.indexOf(rootVal)
-
 //     // 先 right，后 left
-//     node.right = buildTree(inorder.slice(p + 1), postorder.slice(p, -1)) // 去掉最后一个元素
+//     node.right = buildTree(inorder.slice(p + 1), postorder.slice(p, -1)) // 去掉最后一个元素，postorder.slice(p, postorder.length - 1)
 //     node.left = buildTree(inorder.slice(0, p), postorder.slice(0, p))
-
 //     return node
 // }
 
