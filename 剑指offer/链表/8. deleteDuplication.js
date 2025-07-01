@@ -6,8 +6,7 @@
  * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
  *
  *
- * @param pHead1 ListNode类
- * @param pHead2 ListNode类
+ * @param pHead ListNode类
  * @return ListNode类
  *
  * 删除排序链表中的重复节点
@@ -54,8 +53,7 @@ var deleteDuplicates = function(head) {
  * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
  *
  *
- * @param pHead1 ListNode类
- * @param pHead2 ListNode类
+ * @param pHead ListNode类
  * @return ListNode类
  *
  * 删除排序链表中的重复节点 II

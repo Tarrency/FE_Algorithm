@@ -23,6 +23,9 @@ function TreeDepth(pRoot) {
     const right = TreeDepth(pRoot.right)
     return Math.max(left, right) + 1
 }
+function TreeDepthBrief(pRoot) {
+    return pRoot ? Math.max(TreeDepth(pRoot.left), TreeDepth(pRoot.right)) + 1 : 0
+}
 // 时间复杂度：O(n)
 // 空间复杂度：O(h)，其中 h 是树的高度，最坏情况下为 O(n)。
 
@@ -71,3 +74,25 @@ function TreeDepthDFS(pRoot) {
 }
 // 时间复杂度：O(n)
 // 空间复杂度：O(h)，其中 h 是树的高度，最坏情况下为 O(n)
+
+// 解法4：从1开始，显式维护level
+function maxDepthDFS(root) {
+    let maxLevel = 0 // 记录最大深度
+    function dfs(node, level) {
+        if (!node) return
+        if (level > maxLevel) maxLevel = level // 更新最大深度
+        dfs(node.left, level + 1)
+        dfs(node.right, level + 1)
+    }
+    dfs(root, 1) // 根节点算第 1 层
+    return maxLevel
+}
+
+// 解法5：从0开始递归，无副作用（不修改任何外部变量，仅通过参数和返回值传递数据）
+function maxDepth(root, level = 0) {
+    if (!root) return level
+    return Math.max(
+        maxDepth(root.left, level + 1),
+        maxDepth(root.right, level + 1)
+    )
+}

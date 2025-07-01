@@ -1,21 +1,51 @@
-/*
- * @Author: wangqi01 13693607080@163.com
- * @Date: 2025-06-09 14:30:20
- * @LastEditors: wangqi01 13693607080@163.com
- * @LastEditTime: 2025-06-11 11:14:42
- * @FilePath: \FE_Algorithm\剑指offer\二叉树\7. VerifySquenceOfBST.js
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+/**
+ * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+ *
+ *
+ * @param postorder int一维整型数组
+ * @return bool布尔型
+ *
+ * 二叉搜索树的后序遍历序列
+ * 输入：[1,3,2]
+ * 返回值：true
+ * 二叉搜索树特点：左子树比根节点小，右子树比根节点大
+ * 后续遍历顺序：左右根
  */
-// 输入一个整数数组，判断该数组是不是某二叉搜索树的后序遍历的结果。如果是则返回 true ,否则返回 false
-// 输入：[1,3,2]
-// 输出：true
-function VerifySquenceOfBST(sequence) {
 
+// 解法1：双指针，左指针根据规则走到最后，并划分左右子树
+var VerifySquenceOfBST = function(postorder) {
+    const dfs = (i, j) => {
+    // 区间内只有一个值
+        if (i >= j) return true
+        let p = i
+        while (postorder[p] < postorder[j]) p++
+        const mid = p // 找到右一节点
+        while (postorder[p] > postorder[j]) p++
+        // p要走到最后位置  并且递归去判断左右子树都要满足二叉搜索树的性质
+        return p === j && dfs(i, mid - 1) && dfs(mid, j - 1)
+    }
+    return dfs(0, postorder.length - 1)
 }
+// 空间复杂度是 O(n)。
+// 时间复杂度 O(n²)，因为每次递归都需要遍历当前区间的所有元素来验证性质
 
+// 解法2：索引找到根节点和左右子树，判断右子树节点是否都比根节点大
+var verifyTreePostorder = function(postorder) {
+    if (postorder.length <= 2) return true
+
+    const root = postorder[postorder.length - 1]
+    const idx = postorder.findIndex((item) => item > root) // 右子树第一个节点索引
+    const left = postorder.slice(0, idx)
+    const right = postorder.slice(idx, -1)
+    if (Math.min(root, ...right) !== root) return false
+
+    return verifyTreePostorder(left) && verifyTreePostorder(right)
+}
+// 时间复杂度：O(n²)，因为每次递归都需要遍历数组来找到分界点，并且每次递归都会创建新的数组切片
+// 空间复杂度：O(n²)每次递归都会创建新的数组切片
+
+// 解法3：pop出根节点，找到右子树，判断
 var verifyPostorder = function(postorder) {
-    // 后序遍历顺序：左右根
-    // 左子树比根节点小，右子树比根节点大
     if (postorder.length <= 2) return true
     // 这里用pop的一个好处在于最后面 postorder.slice(i) 不需要考虑根节点就可以拿到右子树了
     const root = postorder.pop()
@@ -23,7 +53,7 @@ var verifyPostorder = function(postorder) {
     // 找到左右子树的分界点
     while (postorder[i] < root) {
         i++
-    }
+    } // 左子树最后一个节点判断完，移动到右子树第一个节点
     const rightTree = postorder.slice(i)
     // 右子树当中所有节点都应该大于root
     const rightResult = rightTree.every((item) => item > root)
@@ -34,57 +64,25 @@ var verifyPostorder = function(postorder) {
     verifyPostorder(rightTree)
     )
 }
-// 时间复杂度为 O(n²)，因为每次递归都需要遍历数组来找到分界点，并且每次递归都会创建新的数组切片。
-// 每次递归都会创建新的数组切片，空间复杂度也是 O(n²)在最坏情况下。
+// 时间复杂度：O(n²)，因为每次递归都需要遍历数组来找到分界点，并且每次递归都会创建新的数组切片
+// 空间复杂度：O(n²)每次递归都会创建新的数组切片
 
-// var verifyPostorder = function(postorder) {
-//     if (postorder.length <= 2) return true
-
-//     const root = postorder[postorder.length - 1]
-//     const idx = postorder.findIndex((item) => item > root)
-//     const left = postorder.slice(0, idx)
-//     const right = postorder.slice(idx, -1)
-//     if (Math.min(root, ...right) !== root) return false
-
-//     return verifyPostorder(left) && verifyPostorder(right)
-// }
-
-// var verifyPostorder = function(postorder) {
-//     // 左闭右闭区间
-//     const dfs = (i, j) => {
-//     // 区间内只有一个值
-//         if (i >= j) return true
-//         let p = i
-//         // 后续遍历是左右根
-//         // 前半段都是小于根节点的
-//         while (postorder[p] < postorder[j]) p++
-//         // 找到中间界点
-//         const mid = p
-//         // 后半段都是大于根节点的
-//         while (postorder[p] > postorder[j]) p++
-//         // p要走到最后位置  并且递归去判断左右子树都要满足二叉搜索树的性质
-//         return p == j && dfs(i, mid - 1) && dfs(mid, j - 1)
-//     }
-//     return dfs(0, postorder.length - 1)
-// }
-// 空间复杂度是 O(n)。
-// 时间复杂度 O(n²)，因为每次递归都需要遍历当前区间的所有元素来验证性质
-
-// var verifyPostorder = function(postorder) {
-//     // 后续遍历的顺序是左右根   反向遍历 那就是根右左--大致
-//     const stack = []
-//     let root = Number.MAX_SAFE_INTEGER
-//     for (let i = postorder.length - 1; i >= 0; i--) {
-//     // 如果后面的元素还比根节点大了  那肯定不是正确的顺序
-//         if (postorder[i] > root) return false
-//         // 如果栈内有值并且栈顶元素比当前元素大，比当前元素大的都弹出来，最后一个弹出来的一定是后面元素（左子树）的根节点
-//         while (stack.length && stack[stack.length - 1] > postorder[i]) {
-//             root = stack.pop()
-//         }
-//         stack.push(postorder[i])
-//     }
-//     return true
-// }
+// 解法4：
+var verifyBinaryTreePostorder = function(postorder) {
+    // 后续遍历的顺序是左右根   反向遍历 那就是根右左--大致
+    const stack = []
+    let root = Number.MAX_SAFE_INTEGER
+    for (let i = postorder.length - 1; i >= 0; i--) {
+    // 如果后面的元素还比根节点大，则不是正确的顺序
+        if (postorder[i] > root) return false
+        // 如果栈内有值并且栈顶元素比当前元素大，比当前元素大的都弹出来，最后一个弹出来的一定是后面元素（左子树）的根节点
+        while (stack.length && stack[stack.length - 1] > postorder[i]) {
+            root = stack.pop()
+        }
+        stack.push(postorder[i])
+    }
+    return true
+}
 // 时间复杂度 O(n)，空间复杂度 O(n)
 
 // [4,6,5,9,8]

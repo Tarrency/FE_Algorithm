@@ -2,11 +2,31 @@
  * @Author: wangqi01 13693607080@163.com
  * @Date: 2025-06-12 14:25:17
  * @LastEditors: wangqi01 13693607080@163.com
- * @LastEditTime: 2025-06-12 14:45:00
+ * @LastEditTime: 2025-07-01 14:33:54
  * @FilePath: \FE_Algorithm\剑指offer\二叉树\9. IsBalanced_Solution.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
-// 验证是否是平衡二叉树，它是一棵空树或它的左右两个子树的高度差的绝对值不超过1，并且左右两个子树都是一棵平衡二叉树。
+/*
+ * function TreeNode(x) {
+ *   this.val = x;
+ *   this.left = null;
+ *   this.right = null;
+ * }
+ */
+/**
+ * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+ *
+ *
+ * @param proot TreeNode类
+ * @return bool布尔型
+ *
+ * 判断是不是平衡二叉树
+ * 输入：{1,2,3,4,5,6,7}
+ * 返回值：true
+ * 平衡二叉树是一棵空树或它的左右两个子树的高度差的绝对值不超过1，并且左右两个子树都是一棵平衡二叉树
+ */
+
+// 解法1：按平衡二叉树的要求递归
 function IsBalanced_Solution(pRoot) {
     if (!pRoot) return true
     return Math.abs(getDepth(pRoot.right) - getDepth(pRoot.left)) <= 1 && IsBalanced_Solution(pRoot.left) && IsBalanced_Solution(pRoot.right)
