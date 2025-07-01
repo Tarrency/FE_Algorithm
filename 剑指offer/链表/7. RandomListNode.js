@@ -1,10 +1,25 @@
 
-// 复杂链表的复制（值、next指向、random指向）
-function RandomListNode(x) {
+/*
+ * function RandomListNode(x) {
     this.val = x
     this.next = null
     this.random = null
 }
+ * }
+ */
+/**
+ * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+ *
+ *
+ * @param pHead ListNode类
+ * @param k int整型
+ * @return ListNode类
+ *
+ * 复杂链表的复制（值、next指向、random指向）
+ * 输入：{1,2,3,4,5,3,5,#,2,#}
+ * 返回值：{1,2,3,4,5,3,5,#,2,#}
+ */
+
 // 解法1：Map 存储原节点到拷贝节点的映射，map的key值存储旧node，value值存储新node，返回value
 function Clone(head) {
     if (!head) return head
