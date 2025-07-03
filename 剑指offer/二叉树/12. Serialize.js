@@ -1,39 +1,48 @@
-/*
- * @Author: wangqi01 13693607080@163.com
- * @Date: 2025-06-19 15:39:29
- * @LastEditors: wangqi01 13693607080@163.com
- * @LastEditTime: 2025-06-19 18:03:24
- * @FilePath: \FE_Algorithm\剑指offer\二叉树\12. Serialize.js
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- */
 /* function TreeNode(x) {
     this.val = x;
     this.left = null;
     this.right = null;
 } */
-// 解法1：DFS
-// function Serialize(pRoot) {
-//     if (!pRoot) return 'X'
-//     const left = Serialize(pRoot.left)
-//     const right = Serialize(pRoot.right)
-//     return pRoot.val + ',' + left + ',' + right
-// }
-// function Deserialize(s) {
-//     const res = s.split(',')
-//     const buildTree = (arr) => {
-//         const rootVal = arr.shift()
-//         if (rootVal === 'X') return null
-//         const root = new TreeNode(rootVal)
-//         root.left = buildTree(arr)
-//         root.right = buildTree(arr)
-//         return root
-//     }
-//     return buildTree(res)
-// }
+/**
+ * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+ *
+ *
+ * @param pRoot TreeNode类
+ * @return TreeNode类
+ *
+ * 序列化二叉树
+ * 转化成字符串再转化回去
+ * 输入：{1,2,3,#,#,6,7}
+ * 返回值：{1,2,3,#,#,6,7}
+ */
 
-// https://leetcode.cn/problems/xu-lie-hua-er-cha-shu-lcof/solutions/417238/shou-hua-tu-jie-dfshe-bfsliang-chong-jie-fa-er-cha/
-// 解法2：BFS
+// 解法1：DFS+前序遍历，中序的话不知道根节点位置，后序的话
 function Serialize(pRoot) {
+    if (!pRoot) return 'X'
+    const left = Serialize(pRoot.left)
+    const right = Serialize(pRoot.right)
+    return pRoot.val + ',' + left + ',' + right // 序列化用的前序，需要从后往前处理（因为根节点在最后），然后先构建右子树，再构建左子树
+}
+// 时间复杂度：O(n)，其中 n 是二叉树的节点数。每个节点都会被访问一次。
+// 空间复杂度：O(h)，其中 h 是二叉树的高度。递归调用栈的深度取决于树的高度，最坏情况下（树退化为链表）为 O(n)，平均情况下为 O(log n)。
+
+function Deserialize(s) {
+    const res = s.split(',')
+    const buildTree = (arr) => {
+        const rootVal = arr.shift()
+        if (rootVal === 'X') return null
+        const root = new TreeNode(rootVal)
+        root.left = buildTree(arr)
+        root.right = buildTree(arr)
+        return root
+    }
+    return buildTree(res)
+}
+// 时间复杂度：O(n)，每个节点都会被处理一次。
+// 空间复杂度：O(n)，存储分割后的字符串数组；递归调用栈的空间复杂度为 O(h)，与序列化相同。
+
+// 解法2：BFS
+function SerializeBFS(pRoot) {
     const res = []
     const queue = [pRoot]
     while (queue.length) {
@@ -48,15 +57,18 @@ function Serialize(pRoot) {
     }
     return res.join(',')
 }
-function Deserialize(s) {
+// 时间复杂度：O(n)，每个节点都会被访问一次。
+// 空间复杂度：O(n)，队列中最多存储一层的节点数，最坏情况下（完全二叉树最后一层）为 O(n)。
+
+function DeserializeBFS(s) {
     if (s === 'X') return null
     const res = s.split(',')
     const root = new TreeNode(res[0])
     const queue = [root]
-    let cursor = 1
+    let cursor = 1 // 坐标0是root
     while (cursor < res.length) {
         const node = queue.shift()
-        const leftVal = res[cursor]
+        const leftVal = res[cursor] // BFS的queue存储规则，根，左，右
         const rightVal = res[cursor + 1]
         if (leftVal !== 'X') {
             const leftNode = new TreeNode(leftVal)
@@ -68,25 +80,11 @@ function Deserialize(s) {
             node.right = rightNode
             queue.push(rightNode)
         }
-        cursor += 2
+        cursor += 2 // 根被shift，跳过左、右
     }
     return root
 }
-
-// 方法1：DFS（深度优先搜索）
-// 序列化（Serialize）
-// 时间复杂度：O(n)，其中 n 是二叉树的节点数。每个节点都会被访问一次。
-// 空间复杂度：O(h)，其中 h 是二叉树的高度。递归调用栈的深度取决于树的高度，最坏情况下（树退化为链表）为 O(n)，平均情况下为 O(log n)。
-
-// 反序列化（Deserialize）
-// 时间复杂度：O(n)，每个节点都会被处理一次。
-// 空间复杂度：O(n)，存储分割后的字符串数组；递归调用栈的空间复杂度为 O(h)，与序列化相同。
-
-// 方法2：BFS（广度优先搜索）
-// 序列化（Serialize）
-// 时间复杂度：O(n)，每个节点都会被访问一次。
-// 空间复杂度：O(n)，队列中最多存储一层的节点数，最坏情况下（完全二叉树最后一层）为 O(n)。
-
-// 反序列化（Deserialize）
 // 时间复杂度：O(n)，每个节点都会被处理一次。
 // 空间复杂度：O(n)，队列中最多存储一层的节点数，最坏情况下为 O(n)。
+
+// https://leetcode.cn/problems/xu-lie-hua-er-cha-shu-lcof/solutions/417238/shou-hua-tu-jie-dfshe-bfsliang-chong-jie-fa-er-cha/

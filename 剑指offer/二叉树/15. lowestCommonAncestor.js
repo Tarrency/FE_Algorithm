@@ -1,12 +1,4 @@
 /*
- * @Author: wangqi01 13693607080@163.com
- * @Date: 2025-06-23 14:04:12
- * @LastEditors: wangqi01 13693607080@163.com
- * @LastEditTime: 2025-06-23 16:59:48
- * @FilePath: \FE_Algorithm\剑指offer\二叉树\15. lowestCommonAncestor.js
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- */
-/*
  * function TreeNode(x) {
  *   this.val = x;
  *   this.left = null;
@@ -21,47 +13,37 @@
  * @param p int整型
  * @param q int整型
  * @return int整型
+ *
+ * 二叉搜索树的最近公共祖先
+ * 输入：{7,1,12,0,4,11,14,#,#,3,5},1,12
+ * 返回值：7
+ * 和普通二叉树找公共节点的区别是：通过其特点左<根，右>根
  */
-// 解法1同解法2，只不过显式的处理了特殊情况，迭代
-// function lowestCommonAncestor(root, p, q) {
-//     if (!root) return null
-//     if (p.val === q.val) return q
-//     while (root) {
-//         if (root.val > p.val && root.val > q.val) {
-//             // p和q都在左子树，都比root小
-//             root = root.left
-//         } else if (root.val < p.val && root.val < q.val) {
-//             // p和q都在右子树，都比root小
-//             root = root.right
-//         } else {
-//             // 分叉说明就是root
-//             break
-//         }
-//     }
-//     return root
-// }
 
-// function lowestCommonAncestor(root, p, q) {
-//     while (root) {
-//         if (root.val > p.val && root.val > q.val) {
-//             // p和q都在左子树，都比root小
-//             root = root.left
-//         } else if (root.val < p.val && root.val < q.val) {
-//             // p和q都在右子树，都比root小
-//             root = root.right
-//         } else {
-//             // 分叉说明就是root
-//             break
-//         }
-//     }
-//     return root
-// }
-// 时间复杂度O(n)，空间复杂度O(1)
+// 解法1：迭代，判断root和p和q的值的关系，移动root
+function lowestCommonAncestorBST(root, p, q) {
+    // if (!root) return null
+    // if (p.val === q.val) return q
+    while (root) {
+        if (root.val > p.val && root.val > q.val) {
+            // p和q都在左子树，都比root小
+            root = root.left
+        } else if (root.val < p.val && root.val < q.val) {
+            // p和q都在右子树，都比root小
+            root = root.right
+        } else {
+            // 分叉说明就是root
+            break
+        }
+    }
+    return root
+}
 
-// 递归
+// 解法2：递归
 function lowestCommonAncestor(root, p, q) {
-    if (!root) return root
+    if (!root) return
     if (root.val < p.val && root.val < q.val) {
+        // 左小右大，往右移动
         return lowestCommonAncestor(root.right, p, q)
     } else if (root.val > p.val && root.val > q.val) {
         return lowestCommonAncestor(root.left, p, q)

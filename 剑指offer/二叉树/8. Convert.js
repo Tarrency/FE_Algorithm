@@ -1,24 +1,27 @@
-/*
- * @Author: wangqi01 13693607080@163.com
- * @Date: 2025-06-11 09:45:49
- * @LastEditors: wangqi01 13693607080@163.com
- * @LastEditTime: 2025-06-12 15:20:59
- * @FilePath: \FE_Algorithm\剑指offer\二叉树\8. Convert.js
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- */
 /* function TreeNode(x) {
     this.val = x;
     this.left = null;
     this.right = null;
 } */
-// 二叉树与双向链表
-// 输入一棵二叉搜索树，将该二叉搜索树转换成一个排序的双向链表
+/**
+ * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+ *
+ *
+ * @param proot TreeNode类
+ * @return ListNode类
+ *
+ * 二叉搜索树与双向链表
+ * 输入：{10,6,14,4,8,12,16}
+ * 返回值：From left to right are:4,6,8,10,12,14,16;From right to left are:16,14,12,10,8,6,4;
+ */
+
+// 解法1：中序遍历，指定pre和当前，移动pre，注意判断第一次遍历得指定head指向
 function Convert(pRootOfTree) {
     const dfs = (root) => {
         if (!root) return null
         dfs(root.left)
         if (pre) {
-            // 二叉树中序遍历，左右根，如果有左说明左已经遍历过了，处理左右指向
+            // 二叉树中序遍历，左根右，如果有左说明左已经遍历过了，处理左右指向
             pre.right = root
         } else {
             // 没有说明是第一次遍历，赋值
@@ -28,9 +31,9 @@ function Convert(pRootOfTree) {
         pre = root
         dfs(root.right)
     }
+    if (!pRootOfTree) return null
     let head = null
     let pre = null
-    if (!pRootOfTree) return null
     dfs(pRootOfTree)
     // 看要求，头尾节点需不需要链接
     pre.right = head
@@ -40,11 +43,9 @@ function Convert(pRootOfTree) {
 // 时间复杂度：O(n)（每个节点仅访问一次）
 // 空间复杂度最坏情况：O(n)（递归栈深度），平衡树情况：O(log n)。
 
+// 解法2： 左子树入栈，到null则尾巴节点弹出，连接左右，当前指针改向弹出节点的右节点
 var treeToDoublyList = function(root) {
-    if (!root) {
-        return
-    }
-
+    if (!root) return
     const stack = []
     let node = root
     let pre = null
