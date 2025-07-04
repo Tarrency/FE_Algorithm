@@ -23,3 +23,7 @@ function pop() {
     }
     return stack2.pop()
 }
+// 两个栈一个负责入栈stack1，一个负责出栈stack2
+// 入栈时stack1就直接push存入元素
+// 出栈时stack2中有元素直接pop出，没有则从入栈stack1中取（入栈stack1中pop出放入出栈stack2中）
+// 因为栈是先进后出，所以放入出栈stack2中的为反方向
