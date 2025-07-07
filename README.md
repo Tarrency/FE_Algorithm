@@ -2,7 +2,7 @@
  * @Author: wangqi01 13693607080@163.com
  * @Date: 2024-08-30 13:53:05
  * @LastEditors: wangqi01 13693607080@163.com
- * @LastEditTime: 2025-06-20 16:32:03
+ * @LastEditTime: 2025-07-07 14:38:43
  * @FilePath: \FE_Algorithm\README.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -38,3 +38,7 @@
 
 ## 队列&栈
 1. [用两个栈实现队列](剑指offer/队列&栈/1.%20PushPop.js)
+2. [包含min函数的栈](剑指offer/队列&栈/2.%20TopMin.js)
+3. [栈的压入、弹出序列](剑指offer/队列&栈/3.%20IsPopOrdern.js)
+4. [翻转单词序列](剑指offer/队列&栈/4.%20ReverseSentence.js)
+5. [滑动窗口的最大值](剑指offer/队列&栈/5.%20maxInWindows.js)
