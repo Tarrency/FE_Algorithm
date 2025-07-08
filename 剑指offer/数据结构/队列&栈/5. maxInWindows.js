@@ -11,7 +11,8 @@
  * 返回值：[4,4,6,6,6,5]
  */
 
-// 解法1：设置两个指针i和j，i指向0，j指向size-1，取出i到j之间几个数放进临时数组，用求得最大值，然后i++，j++，直到j===len-1
+// 解法1：暴力，滑动窗口
+// 设置两个指针i和j，i指向0，j指向size-1，取出i到j之间几个数放进临时数组，用求得最大值，然后i++，j++，直到j===len-1
 function maxInWindows(num, size) {
     const len = num.length
     if (size > len || size === 0) { return [] }
@@ -26,3 +27,7 @@ function maxInWindows(num, size) {
     }
     return resArr
 }
+// 时间复杂度 O(n²)，空间复杂度O(1)
+
+// 解法2：单调队列
+// 解法3：堆（优先队列）
