@@ -11,6 +11,8 @@
  * 返回值：4
  * 要求：空间复杂度 O(1)，时间复杂度 O(logn)
  */
+
+// 解法1：二分，查找重复元素+0.5的左右坐标
 function GetNumberOfK(nums, k) {
     // write code here
     if (!nums.length) return 0
@@ -30,3 +32,4 @@ function GetNumberOfK(nums, k) {
     }
     return binary(nums, k + 0.5) - binary(nums, k - 0.5)
 }
+

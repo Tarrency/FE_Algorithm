@@ -27,8 +27,9 @@ function minNumberInRotateArray(nums) {
             right-- // nums[mid] == nums[right]，处理重复元素，或者无法确认最小值在哪，保守处理边界
         }
     }
-    return nums[left]
+    return nums[left] // 当 left == right 时不进入循环，此时 nums[left] 就是最小值
 }
 
 // while (left <= right) + right = mid - 1，适用于精确匹配目标值（如普通二分查找）
-// while (left < right) + right = mid，适用于寻找边界
+// while (left < right) + right = mid，适用于寻找边界，保证不跳过最小值
+
