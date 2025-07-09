@@ -22,7 +22,7 @@ function minNumberInRotateArray(nums) {
         if (nums[right] < nums[mid]) {
             left = mid + 1 // 右边小，最小值在右边
         } else if (nums[right] > nums[mid]) {
-            right = mid // 最小值在左边
+            right = mid // 最小值在左边，但不确定nums[mid]是不是最小值，所以不-1
         } else {
             right-- // nums[mid] == nums[right]，处理重复元素，或者无法确认最小值在哪，保守处理边界
         }

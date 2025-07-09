@@ -10,11 +10,15 @@
  * 返回值："I am a nowcoder."
  * 要求：时间、空间复杂度O(n)
  */
+
+// 解法1：反转数组
 function ReverseSentence(str) {
     const arr = str.split(' ')
     return arr.reverse().join(' ')
 }
+// 时间、空间复杂度O(n)
 
+// 解法2：单词入栈再出
 function ReverseSentenceWithStack(str) {
     const stack = []
     // const words = str.trim().split(/\s+/) // 分割单词（处理多余空格）
@@ -33,3 +37,4 @@ function ReverseSentenceWithStack(str) {
 
     return reversed.join(' ')
 }
+// 时间、空间复杂度O(n)

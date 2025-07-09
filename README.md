@@ -4,7 +4,7 @@
  * @LastEditors: wangqi01 13693607080@163.com
  * @LastEditTime: 2025-07-08 16:14:17
  * @FilePath: \FE_Algorithm\README.md
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%动态
 -->
 # 剑指 Offer
 
@@ -52,3 +52,6 @@
 3. [旋转数组的最小数字](剑指offer/算法/搜索算法/3.%20minNumberInRotateArray.js)
 4. [字符串的排列](剑指offer/算法/搜索算法/4.%20Permutation.js)
 5. [数字序列中某一位的数字](剑指offer/算法/搜索算法/5.%20findNthDigit.js)
+
+### 动态规划
+1. [连续子数组的最大和](剑指offer/算法/动态规划/1.%20FindGreatestSumOfSubArray.js)
