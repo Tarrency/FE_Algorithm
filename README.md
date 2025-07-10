@@ -1,11 +1,3 @@
-<!--
- * @Author: wangqi01 13693607080@163.com
- * @Date: 2024-08-30 13:53:05
- * @LastEditors: wangqi01 13693607080@163.com
- * @LastEditTime: 2025-07-10 16:52:36
- * @FilePath: \FE_Algorithm\README.md
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%动态
--->
 # 剑指 Offer
 
 ## 数据结构
