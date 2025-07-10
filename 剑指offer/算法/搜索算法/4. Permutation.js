@@ -59,3 +59,58 @@ var permutation = function(S) {
  */
 
 // 时间复杂度：O(n × n!)，空间复杂度：O(n)
+
+/**
+ * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+ *
+ *
+ * @param {number[]} nums
+ * @return {number[][]}
+ *
+ * 全排列
+ * 输入：nums = [1,2,3]
+ * 返回值：[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
+ */
+
+// 解法1：递归+回溯+记录
+function Permute(nums) {
+    const res = []
+    const visited = new Array(nums.length).fill(false)
+    backTrack([], visited)
+    return res
+
+    function backTrack(path, visited) {
+        if (path.length === nums.length) {
+            res.push([...path]) // 注意这里要拷贝一份，因为path会被后续操作修改
+            return
+        }
+        for (let i = 0; i < nums.length; i++) {
+            if (!visited[i]) {
+                visited[i] = true // 标记使用
+                path.push(nums[i]) // 加入当前数字
+                backTrack(path, visited)
+                path.pop() // 回溯
+                visited[i] = false // 回溯
+            }
+        }
+    }
+}
+
+// 解法2：递归+回溯+交换
+function permute(nums) {
+    const res = []
+    dfs(0)
+    return res
+
+    function dfs(k) {
+        if (k === nums.length) {
+            res.push([...nums]) // 保存当前排列（拷贝数组）
+            return
+        }
+        for (let i = k; i < nums.length; i++) {
+            [nums[i], nums[k]] = [nums[k], nums[i]] // 交换
+            dfs(k + 1); // 递归下一层
+            [nums[i], nums[k]] = [nums[k], nums[i]] // 回溯
+        }
+    }
+}
