@@ -51,3 +51,6 @@
 3. [跳台阶](剑指offer/算法/动态规划/3.%20jumpFloor.js)
 4. [斐波那契数列](剑指offer/算法/动态规划/4.%20Fibonacci.js)
 5. [正则表达式匹配](剑指offer/算法/动态规划/5.%20match.js)
+6. [跳台阶](剑指offer/算法/动态规划/6.%20jumpFloorII.js)
+7. [矩阵覆盖](剑指offer/算法/动态规划/7.%20rectCover.js)
+8. [买卖股票的最好时机(一)](剑指offer/算法/动态规划/8.%20maxProfit.js)

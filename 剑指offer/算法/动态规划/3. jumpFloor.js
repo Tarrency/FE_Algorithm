@@ -20,10 +20,22 @@ function jumpFloor(number) {
     if (number === 2) return 2
     return jumpFloor(number - 1) + jumpFloor(number - 2)
 }
-// 时间复杂度：O(2^n)，每个递归会调用两个递归，因此会成2的指数级增长
+// 时间复杂度：O(n)，每个递归会调用两个递归，因此会成2的指数级增长
 // 空间复杂度：O(1)
 
-// 解法2：动态规划，dp[i] = dp[i-1] + dp[i-2]
+// 解法2：递归+map缓存
+function jumpFloorMap(number, memo = new Map()) {
+    // write code here
+    if (number === 1) return 1
+    if (number === 2) return 2
+    if (memo.has(number)) return memo.get(number) // 检查是否已缓存
+    const result = jumpFloor(number - 1, memo) + jumpFloor(number - 2, memo)
+    memo.set(number, result) // 缓存结果
+    return result
+}
+// 时间复杂度为 O(n)，空间复杂度为 O(n)
+
+// 解法3：动态规划，dp[i] = dp[i-1] + dp[i-2]
 function jumpFloorDP(number) {
     const dp = new Array(number + 1)
     dp[1] = 1
@@ -35,13 +47,13 @@ function jumpFloorDP(number) {
 }
 // 时间复杂度为 O(n)，空间复杂度为 O(n)
 
-// 解法3：迭代法，n1表示 dp[i-1]，n2表示 dp[i-2]
+// 解法4：迭代法，n1表示 dp[i-1]，n2表示 dp[i-2]
 function jump(number) {
     if (number <= 2) return number
     let res = 0
     let n1 = 1
     let n2 = 2
-    for (let i = 3; i <= number.length; i++) {
+    for (let i = 3; i <= number; i++) {
         res = n1 + n2
         n2 = n1 // dp[i - 2]进化为dp[i - 1]
         n1 = res // dp[i - 1]进化为dp[i]
