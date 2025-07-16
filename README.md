@@ -54,3 +54,6 @@
 6. [跳台阶](剑指offer/算法/动态规划/6.%20jumpFloorII.js)
 7. [矩阵覆盖](剑指offer/算法/动态规划/7.%20rectCover.js)
 8. [买卖股票的最好时机(一)](剑指offer/算法/动态规划/8.%20maxProfit.js)
+9. [礼物的最大价值](剑指offer/算法/动态规划/9.%20maxValue.js)
+10. [最长不含重复字符的子字符串](剑指offer/算法/动态规划/10.%20lengthOfLongestSubstring.js)
+11. [把数字翻译成字符串](剑指offer/算法/动态规划/11.%20solve.js)
