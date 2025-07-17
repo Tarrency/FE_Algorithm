@@ -57,3 +57,15 @@
 9. [礼物的最大价值](剑指offer/算法/动态规划/9.%20maxValue.js)
 10. [最长不含重复字符的子字符串](剑指offer/算法/动态规划/10.%20lengthOfLongestSubstring.js)
 11. [把数字翻译成字符串](剑指offer/算法/动态规划/11.%20solve.js)
+
+### 回溯
+1. [矩阵中的路径](剑指offer/算法/回溯/1.%20exist.js)
+2. [机器人的运动范围](剑指offer/算法/回溯/2.%20movingCount.js)
+
+### 排序
+1. [数组中重复的数字](剑指offer/算法/排序/1.%20duplicate.js)
+2. [数组中的逆序对](剑指offer/算法/排序/2.%20InversePairs.js)
+3. [最小的K个数](剑指offer/算法/排序/3.%20GetLeastNumbers_Solution.js)
+4. [数据流中的中位数](剑指offer/算法/排序/4.%20GetMedian.js)
+
+### 位运算
