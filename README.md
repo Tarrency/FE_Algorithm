@@ -69,3 +69,19 @@
 4. [数据流中的中位数](剑指offer/算法/排序/4.%20GetMedian.js)
 
 ### 位运算
+1. [不用加减乘除做加法](剑指offer/算法/位运算/1.%20Add.js)
+2. [二进制中1的个数](剑指offer/算法/位运算/2.%20NumberOf1.js)
+3. [数值的整数次方](剑指offer/算法/位运算/3.%20Power.js)
+4. [数组中只出现一次的两个数字](剑指offer/算法/位运算/4.%20FindNumsAppearOnce.js)
+5. [求1+2+3+...+n](剑指offer/算法/位运算/5.%20Sum_Solution.js)
+
+# 排序专题
+1. [选择排序](剑指offer/排序专题/1.%20selectionSort.js)
+2. [冒泡排序](剑指offer/排序专题/2.%20bubbleSort.js)
+3. [插入排序](剑指offer/排序专题/3.%20insertionSort.js)
+4. [快速排序](剑指offer/排序专题/4.%20quickSort.js)
+5. [归并排序](剑指offer/排序专题/5.%20mergeSort.js)
+6. [堆排序](剑指offer/排序专题/6.%20heapSort.js)
+7. [桶排序](剑指offer/排序专题/7.%20bucketSort.js)
+8. [计数排序](剑指offer/排序专题/8.%20countingSort.js)
+9. [基数排序](剑指offer/排序专题/9.%20radixSort.js)
