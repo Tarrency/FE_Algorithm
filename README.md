@@ -75,6 +75,25 @@
 4. [数组中只出现一次的两个数字](剑指offer/算法/位运算/4.%20FindNumsAppearOnce.js)
 5. [求1+2+3+...+n](剑指offer/算法/位运算/5.%20Sum_Solution.js)
 
+### 排序
+1. [顺时针打印矩阵](剑指offer/算法/模拟/1.%20printMatrix.js)
+2. [扑克牌顺子](剑指offer/算法/模拟/2.%20IsContinuous.js)
+3. [把字符串转换成整数(atoi)](剑指offer/算法/模拟/3.%20StrToInt.js)
+4. [表示数值的字符串](剑指offer/算法/模拟/4.%20isNumeric.js)
+
+### 其他算法
+1. [构建乘积数组](剑指offer/算法/其他/1.%20multiply.js)
+2. [第一个只出现一次的字符](剑指offer/算法/其他/2.%20FirstNotRepeatingChar.js)
+3. [替换空格](剑指offer/算法/其他/3.%20replaceSpace.js)
+4. [调整数组顺序使奇数位于偶数前面(一)](剑指offer/算法/其他/4.%20reOrderArray.js)
+5. [数组中出现次数超过一半的数字](剑指offer/算法/其他/5.%20MoreThanHalfNum_Solution.js)
+6. [整数中1出现的次数（从1到n整数中1出现的次数）](剑指offer/算法/其他/6.%20NumberOf1Between1AndN_Solution.js)
+7. [把数组排成最小的数](剑指offer/算法/其他/7.%20PrintMinNumber.js)
+8. [丑数](剑指offer/算法/其他/8.%20GetUglyNumber_Solution.js)
+9. [和为S的连续正数序列](剑指offer/算法/其他/9.%20FindContinuousSequence.js)
+
+
+
 # 排序专题
 1. [选择排序](剑指offer/排序专题/1.%20selectionSort.js)
 2. [冒泡排序](剑指offer/排序专题/2.%20bubbleSort.js)
