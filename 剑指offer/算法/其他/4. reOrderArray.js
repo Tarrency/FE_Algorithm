@@ -11,7 +11,7 @@
  * 返回值：[1,3,2,4]
  *
  * 要求：时间复杂度 O(n)，空间复杂度 O(n)
- * 进阶：时间复杂度 O(n2)，空间复杂度 O(1)
+ * 进阶：时间复杂度 O(n^2)，空间复杂度 O(1)
  */
 
 // 解法1：es6写法
@@ -20,8 +20,10 @@ function reOrderArray(array) {
     const oddArr = array.filter(item => item % 2 !== 0)
     const evenArr = array.filter(item => item % 2 === 0)
     const res = [...oddArr, ...evenArr]
-    return resArr
+    return res
     // return arr1.concat(arr2)
+    // return [...array.filter(i => i%2 === 1),...array.filter(i => i%2 === 0)]
+    // return array.sort((a, b) => a % 2 === 0 ? 1 : -1)
 }
 // 时间复杂度 O(n)，空间复杂度 O(n)
 

@@ -91,7 +91,14 @@
 7. [把数组排成最小的数](剑指offer/算法/其他/7.%20PrintMinNumber.js)
 8. [丑数](剑指offer/算法/其他/8.%20GetUglyNumber_Solution.js)
 9. [和为S的连续正数序列](剑指offer/算法/其他/9.%20FindContinuousSequence.js)
-
+10. [和为S的两个数字](剑指offer/算法/其他/10.%20FindNumbersWithSum.js)
+11. [左旋转字符串](剑指offer/算法/其他/11.%20LeftRotateString.js)
+12. [孩子们的游戏(圆圈中最后剩下的数)](剑指offer/算法/其他/12.%20LastRemaining_Solution.js)
+13. [字符流中第一个不重复的字符](剑指offer/算法/其他/13.%20FirstAppearingOnce.js)
+14. [剪绳子](剑指offer/算法/其他/14.%20cutRope.js)
+15. [调整数组顺序使奇数位于偶数前面(二)](剑指offer/算法/其他/15.%20reOrderArrayTwo.js)
+16. [剪绳子（进阶版）](剑指offer/算法/其他/16.%20cutRope.js)
+17. [打印从1到最大的n位数](剑指offer/算法/其他/17.%20printNumbers.js)
 
 
 # 排序专题
