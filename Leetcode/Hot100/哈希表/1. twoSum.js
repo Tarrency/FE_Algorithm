@@ -17,13 +17,12 @@ var twoSum = function(nums, target) {
     const map = new Map()
     for (let i = 0; i < nums.length; i++) {
         if (!map.has(target - nums[i])) {
-            // map[nums[i]] = [i]
             map.set(nums[i], i)
         } else {
-            // target - nums[i]
             return [map.get(target - nums[i]), i]
         }
     }
 }
+// 时间复杂度O(n)，空间复杂度O(n)
 // @lc code=end
 

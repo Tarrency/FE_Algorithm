@@ -116,4 +116,11 @@
 # Leetcode
 
 ## Hot100
+
+### 哈希表
 1. [两数之和](Leetcode/Hot100/哈希表/1.%20twoSum.js)
+2. [字母异位词分组](Leetcode/Hot100/哈希表/2.%20groupAnagrams.js)
+3. [最长连续序列](Leetcode/Hot100/哈希表/3.%20longestConsecutive.js)
+
+### 双指针
+1. [移动零](Leetcode/Hot100/双指针/1.%20moveZeroes.js)
