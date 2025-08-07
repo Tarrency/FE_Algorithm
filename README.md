@@ -111,7 +111,7 @@
 7. [桶排序](排序专题/7.%20bucketSort.js)
 8. [计数排序](排序专题/8.%20countingSort.js)
 9. [基数排序](排序专题/9.%20radixSort.js)
-
+  
 
 # Leetcode
 
@@ -124,3 +124,9 @@
 
 ### 双指针
 1. [移动零](Leetcode/Hot100/双指针/1.%20moveZeroes.js)
+2. [盛最多水的容器](Leetcode/Hot100/双指针/2.%20maxArea.js)
+3. [三数之和](Leetcode/Hot100/双指针/3.%20threeSum.js)
+
+### 滑动窗口
+1. [无重复字符的最长子串](Leetcode/Hot100/滑动窗口/1.%20lengthOfLongestSubstring.js)[最长不含重复字符的子字符串](剑指offer/算法/动态规划/10.%20lengthOfLongestSubstring.js)
+2. [找到字符串中所有字母异位词](Leetcode/Hot100/滑动窗口/1.%20indAnagrams.js)

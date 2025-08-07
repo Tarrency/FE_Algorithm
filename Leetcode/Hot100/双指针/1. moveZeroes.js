@@ -20,6 +20,7 @@ var moveZeroes = function(nums) {
     }
     nums.fill(0, cur) // 从cur开始填充0
 }
+// 时间复杂度为 O(n)，空间复杂度为 O(1)
 
 // 解法2：双指针，交换0和非0元素位置
 var moveZeroe = function(nums) {
@@ -31,5 +32,6 @@ var moveZeroe = function(nums) {
         }
     }
 }
+// 时间复杂度为 O(n)，空间复杂度为 O(1)
 // @lc code=end
 
