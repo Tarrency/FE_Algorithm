@@ -126,7 +126,16 @@
 1. [移动零](Leetcode/Hot100/双指针/1.%20moveZeroes.js)
 2. [盛最多水的容器](Leetcode/Hot100/双指针/2.%20maxArea.js)
 3. [三数之和](Leetcode/Hot100/双指针/3.%20threeSum.js)
+4. [接雨水(Hard)](Leetcode/Hot100/双指针/4.%20trap.js)
 
 ### 滑动窗口
 1. [无重复字符的最长子串](Leetcode/Hot100/滑动窗口/1.%20lengthOfLongestSubstring.js)[最长不含重复字符的子字符串](剑指offer/算法/动态规划/10.%20lengthOfLongestSubstring.js)
-2. [找到字符串中所有字母异位词](Leetcode/Hot100/滑动窗口/1.%20indAnagrams.js)
+2. [找到字符串中所有字母异位词](Leetcode/Hot100/滑动窗口/2.%20indAnagrams.js)
+
+### 子串
+1. [和为 K 的子数组](Leetcode/Hot100/子串/1.%20subarraySum.js)
+2. [滑动窗口最大值(Hard)](Leetcode/Hot100/子串/2.%20maxSlidingWindow.js)[滑动窗口最大值](剑指offer/数据结构/队列&栈/5.%20maxInWindows.js)
+3. [最小覆盖子串(Hard)](Leetcode/Hot100/子串/3.%20minWindow.js)
+
+### 普通数组
+1. [最大子数组和](Leetcode/Hot100/普通数组/1.%20maxSubArray.js)
