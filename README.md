@@ -138,4 +138,8 @@
 3. [最小覆盖子串(Hard)](Leetcode/Hot100/子串/3.%20minWindow.js)
 
 ### 普通数组
-1. [最大子数组和](Leetcode/Hot100/普通数组/1.%20maxSubArray.js)
+1. [最大子数组和](Leetcode/Hot100/普通数组/1.%20maxSubArray.js)[连续子数组的最大和](剑指offer/算法/动态规划/1.%20FindGreatestSumOfSubArray.js)
+2. [合并区间](Leetcode/Hot100/普通数组/2.%20merge.js)
+3. [轮转区间](Leetcode/Hot100/普通数组/3.%20rotate.js)[左旋转字符串](剑指offer/算法/其他/11.%20LeftRotateString.js)
+4. [除自身以外数组的乘积](Leetcode/Hot100/普通数组/4.%20merge.js)[构建乘积数组](剑指offer/算法/其他/1.%20multiply.js)
+5. [缺失的第一个正数(Hard)](Leetcode/Hot100/普通数组/5.%20firstMissingPositive.js)
