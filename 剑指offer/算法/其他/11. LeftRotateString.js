@@ -15,7 +15,18 @@
  * 要求：时间复杂度 O(n)，空间复杂度 O(n)
  */
 
-// 解法1：数组api
+// 解法1：数组mod
+function leftRotateString(str, k) {
+    const len = str.length
+    k = k % n // 处理k大于数组长度的情况
+    const newStr = new Array(len)
+    for (let i = 0; i < len; i++) {
+        newStr[i] = str[(i + k) % len] // 左旋
+    }
+    return newStr.join('')
+}
+
+// 解法2：数组api
 function LeftRotateString(str, n) {
     // write code here
     if (!str || str.length === 0) return ''
@@ -27,7 +38,7 @@ function LeftRotateString(str, n) {
     return array.join('')
 }
 
-// 解法2：slice
+// 解法3：slice
 function LeftRotateStringSlice(str, n) {
     if (!str) return ''
     const mod = n % str.length // 移动n比字符串长
@@ -35,7 +46,7 @@ function LeftRotateStringSlice(str, n) {
     return str.slice(mod).concat(a) // 获取mod之后的字符，并与前面的字符连接
 }
 
-// 解法3：substring
+// 解法4：substring
 function LeftRotateStringSubstring(str, n) {
     if (!str) return ''
     const k = n % str.length // 实际真正循环次数
