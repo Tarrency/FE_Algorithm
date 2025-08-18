@@ -151,6 +151,11 @@
 4. [搜索二维矩阵 II](Leetcode/Hot100/矩阵/4.%20searchMatrix.js)&nbsp;[二维数组中的查找](剑指offer/算法/搜索算法/2.%20Find.js)
 
 ### 链表
+1. [相交链表](Leetcode/Hot100/链表/1.%20getIntersectionNode.js)&nbsp;[两个链表的第一个公共节点](剑指offer/数据结构/链表/4.%20FindFirstCommonNode.js)
+2. [反转链表](Leetcode/Hot100/链表/2.%20reverseList.js)&nbsp;[反转链表](剑指offer/数据结构/链表/2.%20reverseList.js)
+3. [回文链表](Leetcode/Hot100/链表/3.%20isPalindrome.js)
+4. [环形链表](Leetcode/Hot100/链表/4.%20hasCycle.js)
+5. [环形链表 II](Leetcode/Hot100/链表/5.%20detectCycle.js)&nbsp;[链表中环的入口节点](剑指offer/数据结构/链表/5.%20EntryNodeOfLoop.js)
 
 ### 二叉树
 
