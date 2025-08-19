@@ -163,7 +163,8 @@
 10. [K个一组翻转链表(Hard)](Leetcode/Hot100/链表/10.%20reverseKGroup.js)
 11. [随机链表的复制](Leetcode/Hot100/链表/11.%20copyRandomList.js)&nbsp;[复杂链表的复制](剑指offer/数据结构/链表/7.%20RandomListNode.js)
 12. [排序链表](Leetcode/Hot100/链表/12.%20sortList.js)
-13. [合并K个升序链表](Leetcode/Hot100/链表/13.%20mergeKLists.js)
+13. [合并K个升序链表(Hard)](Leetcode/Hot100/链表/13.%20mergeKLists.js)
+14. [LRU 缓存](Leetcode/Hot100/链表/14.%20LRUCache.js)
 
 ### 二叉树
 
