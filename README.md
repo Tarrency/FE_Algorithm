@@ -156,6 +156,14 @@
 3. [回文链表](Leetcode/Hot100/链表/3.%20isPalindrome.js)
 4. [环形链表](Leetcode/Hot100/链表/4.%20hasCycle.js)
 5. [环形链表 II](Leetcode/Hot100/链表/5.%20detectCycle.js)&nbsp;[链表中环的入口节点](剑指offer/数据结构/链表/5.%20EntryNodeOfLoop.js)
+6. [合并两个有序链表](Leetcode/Hot100/链表/6.%20mergeTwoLists.js)&nbsp;[合并两个排序的链表](剑指offer/数据结构/链表/3.%20mergeSortedList.js)
+7. [两数相加](Leetcode/Hot100/链表/7.%20addTwoNumbers.js)
+8. [删除链表的倒数第 N 个结点](Leetcode/Hot100/链表/8.%20removeNthFromEnd.js)
+9. [两两交换链表中的节点](Leetcode/Hot100/链表/9.%20swapPairs.js)
+10. [K个一组翻转链表(Hard)](Leetcode/Hot100/链表/10.%20reverseKGroup.js)
+11. [随机链表的复制](Leetcode/Hot100/链表/11.%20copyRandomList.js)&nbsp;[复杂链表的复制](剑指offer/数据结构/链表/7.%20RandomListNode.js)
+12. [排序链表](Leetcode/Hot100/链表/12.%20sortList.js)
+13. [合并K个升序链表](Leetcode/Hot100/链表/13.%20mergeKLists.js)
 
 ### 二叉树
 
