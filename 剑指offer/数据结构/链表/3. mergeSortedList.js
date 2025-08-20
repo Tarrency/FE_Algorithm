@@ -10,8 +10,9 @@
  * 输入：{1,3,5},{2,4,6}
  * 返回值：{1,2,3,4,5,6}
  */
+
+// 解法1：递归，两个链表头部值较小的一个节点与剩下元素的merge操作结果合并
 function Merge(pHead1, pHead2) {
-    // 解法1：递归，两个链表头部值较小的一个节点与剩下元素的merge操作结果合并
     if (!pHead1) return pHead2
     if (!pHead2) return pHead1
     if (pHead1.val <= pHead2.val) {

@@ -167,6 +167,11 @@
 14. [LRU 缓存](Leetcode/Hot100/链表/14.%20LRUCache.js)
 
 ### 二叉树
+1. [二叉树的中序遍历](Leetcode/Hot100/二叉树/1.%20inorderTraversal.js)
+2. [二叉树的最大深度](Leetcode/Hot100/二叉树/2.%20maxDepth.js)&nbsp;[二叉树的深度](剑指offer/数据结构/二叉树/1.%20TreeDepth.js)
+3. [翻转二叉树](Leetcode/Hot100/二叉树/3.%20invertTree.js)&nbsp;[二叉树的镜像](剑指offer/数据结构/二叉树/5.%20Mirror.js)
+4. [对称二叉树](Leetcode/Hot100/二叉树/4.%20isSymmetric.js)
+5. [二叉树的直径](Leetcode/Hot100/二叉树/5.%20diameterOfBinaryTree.js)
 
 ### 回溯
 

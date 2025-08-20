@@ -2,6 +2,7 @@
  * @lc app=leetcode.cn id=234 lang=javascript
  *
  * [234] 回文链表
+ * 判断链表是否回文
  */
 
 // @lc code=start
