@@ -176,6 +176,11 @@
 7. [将有序数组转换为二叉搜索树](Leetcode/Hot100/二叉树/7.%20sortedArrayToBST.js)
 8. [验证二叉搜索树](Leetcode/Hot100/二叉树/8.%20isValidBST.js)
 9. [二叉搜索树中第K小的元素](Leetcode/Hot100/二叉树/9.%20kthSmallest.js)&nbsp;[二叉搜索树的第k个节点](剑指offer/数据结构/二叉树/2.%20KthNode.js)
+10. [二叉树的右视图](Leetcode/Hot100/二叉树/10.%20rightSideView.js)
+11. [二叉树展开为链表](Leetcode/Hot100/二叉树/11.%20flatten.js)
+12. [从前序与中序遍历序列构造二叉树](Leetcode/Hot100/二叉树/12.%20rightSideView.js)&nbsp;[重建二叉树](剑指offer/数据结构/二叉树/3.%20reConstructBinaryTree.js)
+13. [路径总和III](Leetcode/Hot100/二叉树/13.%20flatten.js)&nbsp;[二叉树中和为某一值的路径(三)](剑指offer/数据结构/二叉树/13.%20FindPath.js)
+14. [二叉树的最近公共祖先](Leetcode/Hot100/二叉树/14.%20lowestCommonAncestor.js)&nbsp;[在二叉树中找到两个节点的最近公共祖先](剑指offer/数据结构/二叉树/14.%20lowestCommonAncestor.js)
 
 ### 回溯
 

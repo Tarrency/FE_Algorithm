@@ -94,26 +94,5 @@ const inorderTraversalStack = (root) => {
     return res
 }
 
-// 前序
-const preorderTraversalFront = (root) => {
-    const res = []
-    const stack = []
-    let cur = root
-
-    while (cur || stack.length) {
-        while (cur) {
-            res.push(cur.val) // 访问节点（前序：先访问再压栈）
-            stack.push(cur)
-            cur = cur.left // 继续向左
-        }
-
-        // 弹出栈顶节点
-        cur = stack.pop()
-        // 转向右子树
-        cur = cur.right
-    }
-
-    return res
-}
 // @lc code=end
 
