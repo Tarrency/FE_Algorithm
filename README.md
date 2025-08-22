@@ -172,6 +172,10 @@
 3. [翻转二叉树](Leetcode/Hot100/二叉树/3.%20invertTree.js)&nbsp;[二叉树的镜像](剑指offer/数据结构/二叉树/5.%20Mirror.js)
 4. [对称二叉树](Leetcode/Hot100/二叉树/4.%20isSymmetric.js)
 5. [二叉树的直径](Leetcode/Hot100/二叉树/5.%20diameterOfBinaryTree.js)
+6. [二叉树的层序遍历](Leetcode/Hot100/二叉树/6.%20diameterOfBinaryTree.js)&nbsp;[把二叉树打印成多行](剑指offer/数据结构/二叉树/11.%20Print.js)
+7. [将有序数组转换为二叉搜索树](Leetcode/Hot100/二叉树/7.%20sortedArrayToBST.js)
+8. [验证二叉搜索树](Leetcode/Hot100/二叉树/8.%20isValidBST.js)
+9. [二叉搜索树中第K小的元素](Leetcode/Hot100/二叉树/9.%20kthSmallest.js)&nbsp;[二叉搜索树的第k个节点](剑指offer/数据结构/二叉树/2.%20KthNode.js)
 
 ### 回溯
 

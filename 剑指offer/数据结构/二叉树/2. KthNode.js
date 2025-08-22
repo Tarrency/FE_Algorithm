@@ -60,11 +60,11 @@ function inorderTraversalKthNode(root) {
     const res = []
     const stack = []
     let cur = root
-    while (stack.length > 0 || current) {
+    while (stack.length || cur) {
         // 1. 将当前节点及其所有左子节点压入栈
-        while (current) {
-            stack.push(current)
-            current = current.left
+        while (cur) {
+            stack.push(cur)
+            cur = cur.left
         }
         // 2. 弹出栈顶节点（最左侧节点）
         cur = stack.pop()
@@ -94,10 +94,10 @@ var kthSmallest = function(root, k) {
     dfs(root)
     return ans
 }
-// 时间复杂度：O(n)
-// 空间复杂度：O(h)
+// 时间复杂度：O(k) - 最多遍历 k 个节点就提前终止
+// 空间复杂度：O(h) - 只需要递归调用栈，深度为树高 h
 
-// 解法5：直接返回答案
+// 解法5：dfs提前终止
 var kthSmallestNode = function(root, k) {
     function dfs(node) {
         if (node === null) {
@@ -114,5 +114,27 @@ var kthSmallestNode = function(root, k) {
     }
     return dfs(root)
 }
-// 时间复杂度：O(n)
-// 空间复杂度：O(n)
+// 时间复杂度：O(k) - 最多遍历 k 个节点就提前终止
+// 空间复杂度：O(h) - 只需要递归调用栈，深度为树高 h
+
+// 解法6：迭代栈提前终止
+var kthSmallestStackK = function(root, k) {
+    const stack = []
+    let ans = 0
+    while (stack.length || root) {
+        while (root) {
+            stack.push(root)
+            root = root.left
+        }
+        root = stack.pop()
+        k--
+        if (k === 0) {
+            ans = root.val
+            break
+        }
+        root = root.right
+    }
+    return ans
+}
+// 时间复杂度：O(k) - 最多遍历 k 个节点就提前终止
+// 空间复杂度：O(h) - 只需要递归调用栈，深度为树高 h
