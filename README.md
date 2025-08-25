@@ -111,6 +111,9 @@
 7. [桶排序](排序专题/7.%20bucketSort.js)
 8. [计数排序](排序专题/8.%20countingSort.js)
 9. [基数排序](排序专题/9.%20radixSort.js)
+
+# 回溯框架
+1. [回溯框架](回溯框架/1.%20backtrack.js)
   
 
 # Leetcode
@@ -181,8 +184,10 @@
 12. [从前序与中序遍历序列构造二叉树](Leetcode/Hot100/二叉树/12.%20rightSideView.js)&nbsp;[重建二叉树](剑指offer/数据结构/二叉树/3.%20reConstructBinaryTree.js)
 13. [路径总和III](Leetcode/Hot100/二叉树/13.%20flatten.js)&nbsp;[二叉树中和为某一值的路径(三)](剑指offer/数据结构/二叉树/13.%20FindPath.js)
 14. [二叉树的最近公共祖先](Leetcode/Hot100/二叉树/14.%20lowestCommonAncestor.js)&nbsp;[在二叉树中找到两个节点的最近公共祖先](剑指offer/数据结构/二叉树/14.%20lowestCommonAncestor.js)
+15. [二叉树中的最大路径和(Hard)](Leetcode/Hot100/二叉树/15.%20maxPathSum.js)
 
 ### 回溯
+1. [全排列](Leetcode/Hot100/回溯/1.%20permute.js)
 
 ### 二分查找
 

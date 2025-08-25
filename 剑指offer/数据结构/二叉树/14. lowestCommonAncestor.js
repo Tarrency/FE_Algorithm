@@ -28,6 +28,13 @@ function lowestCommonAncestor(root, o1, o2) {
     if (left && right) return root // 如果两个节点分别位于当前节点的左右两侧，当前节点必定是它们的LCA
     return left ?? right // 如果两个节点都在同一侧，则LCA必定在该侧的子树中
 }
+function lowestCommonAncestorNode(root, node1, node2) {
+    if (root == null || root === node1 || root === node2) return root
+    const left = lowestCommonAncestorNode(root.left, node1, node2)
+    const right = lowestCommonAncestorNode(root.right, node1, node2)
+    if (left && right) return root
+    return left ?? right
+}
 // 时间复杂度：O(n)，需要访问所有节点
 // 空间复杂度：O(h)，h是树的高度，由递归栈深度决定
 
@@ -60,4 +67,5 @@ function lowestCommonAncestorOfNode(root, o1, o2) {
     }
     return null
 }
+
 // 时间空间复杂度：O(N)
