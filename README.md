@@ -112,6 +112,7 @@
 8. [计数排序](排序专题/8.%20countingSort.js)
 9. [基数排序](排序专题/9.%20radixSort.js)
 
+
 # 回溯框架
 1. [回溯框架](回溯框架/1.%20backtrack.js)
   
@@ -188,6 +189,8 @@
 
 ### 回溯
 1. [全排列](Leetcode/Hot100/回溯/1.%20permute.js)
+2. [子集](Leetcode/Hot100/回溯/2.%20subsets.js)
+3. [子集](Leetcode/Hot100/回溯/3.%20subsets.js)
 
 ### 二分查找
 

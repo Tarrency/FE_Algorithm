@@ -12,7 +12,20 @@
  * @return {number[][]}
  */
 var permute = function(nums) {
-    
-};
+    const res = []
+    const backtrack = (path) => {
+        if (path.length === nums.length) {
+            res.push(path)
+            return
+        }
+        for (const n of nums) {
+            if (path.includes(n)) continue
+            backtrack(path.concat(n))
+        }
+    }
+    backtrack([])
+    return res
+}
+// 时间复杂度：O(n × n!)，空间复杂度：O(n × n!)
 // @lc code=end
 
