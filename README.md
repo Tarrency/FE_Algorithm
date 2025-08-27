@@ -190,7 +190,8 @@
 ### 回溯
 1. [全排列](Leetcode/Hot100/回溯/1.%20permute.js)
 2. [子集](Leetcode/Hot100/回溯/2.%20subsets.js)
-3. [子集](Leetcode/Hot100/回溯/3.%20subsets.js)
+3. [电话号码的字母组合](Leetcode/Hot100/回溯/3.%20letterCombinations.js)
+4. [组合总和](Leetcode/Hot100/回溯/4.%20combinationSum.js)
 
 ### 二分查找
 

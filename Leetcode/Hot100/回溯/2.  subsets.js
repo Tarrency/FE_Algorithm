@@ -63,5 +63,6 @@ var subsets3 = function(nums) {
     dfs(0, []) // 从第0个元素开始，初始路径为空数组
     return res
 }
+// 时间复杂度：O(n × 2ⁿ)，空间复杂度：O(n × 2ⁿ)， 2ⁿ 个子集，n：平均每个子集的创建成本，平均每个子集长度：n/2
 // @lc code=end
 
