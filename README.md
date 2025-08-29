@@ -192,8 +192,13 @@
 2. [子集](Leetcode/Hot100/回溯/2.%20subsets.js)
 3. [电话号码的字母组合](Leetcode/Hot100/回溯/3.%20letterCombinations.js)
 4. [组合总和](Leetcode/Hot100/回溯/4.%20combinationSum.js)
+5. [括号生成](Leetcode/Hot100/回溯/5.%20generateParenthesis.js)
+6. [单词搜索](Leetcode/Hot100/回溯/6.%20exist.js)
 
 ### 二分查找
+1. [搜索插入位置](Leetcode/Hot100/二分查找/1.%20searchInsert.js)
+2. [搜索二维矩阵](Leetcode/Hot100/二分查找/2.%20searchMatrix.js)&nbsp;[二维数组中的查找](剑指offer/算法/搜索算法/2.%20Find.js)
+3. [搜索插入位置](Leetcode/Hot100/二分查找/3.%20searchInsert.js)
 
 ### 栈
 
