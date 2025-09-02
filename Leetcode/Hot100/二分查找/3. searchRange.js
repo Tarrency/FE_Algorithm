@@ -12,8 +12,30 @@
  * @param {number} target
  * @return {number[]}
  */
-var searchRange = function(nums, target) {
+function searchRange(nums, k) {
+    let res = [-1, -1]
+    if (!nums.length) return res
 
+    function binary(nums, target) {
+        let left = 0
+        let right = nums.length - 1
+        while (left <= right) {
+            const mid = Math.floor((left + right) / 2)
+            if (nums[mid] < target) {
+                left = mid + 1
+            } else {
+                right = mid - 1
+            }
+        }
+        return left
+    }
+    const left = binary(nums, k)
+    const right = binary(nums, k + 0.5) - 1
+    if (nums[right] === k) {
+        res = [left, right]
+    }
+    return res
 }
+
 // @lc code=end
 

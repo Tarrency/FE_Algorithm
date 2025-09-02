@@ -196,9 +196,11 @@
 6. [单词搜索](Leetcode/Hot100/回溯/6.%20exist.js)
 
 ### 二分查找
-1. [搜索插入位置](Leetcode/Hot100/二分查找/1.%20searchInsert.js)
+1. [搜索插入位置](Leetcode/Hot100/二分查找/1.%20searchInsert.js)&nbsp;
 2. [搜索二维矩阵](Leetcode/Hot100/二分查找/2.%20searchMatrix.js)&nbsp;[二维数组中的查找](剑指offer/算法/搜索算法/2.%20Find.js)
-3. [搜索插入位置](Leetcode/Hot100/二分查找/3.%20searchInsert.js)
+3. [在排序数组中查找元素的第一个和最后一个位置](Leetcode/Hot100/二分查找/3.%20searchRange.js)
+4. [搜索旋转排序数组](Leetcode/Hot100/二分查找/4.%20search.js)
+5. [寻找旋转排序数组中的最小值](Leetcode/Hot100/二分查找/5.%20findMin.js)
 
 ### 栈
 
