@@ -196,13 +196,18 @@
 6. [单词搜索](Leetcode/Hot100/回溯/6.%20exist.js)
 
 ### 二分查找
-1. [搜索插入位置](Leetcode/Hot100/二分查找/1.%20searchInsert.js)&nbsp;
+1. [搜索插入位置](Leetcode/Hot100/二分查找/1.%20searchInsert.js)
 2. [搜索二维矩阵](Leetcode/Hot100/二分查找/2.%20searchMatrix.js)&nbsp;[二维数组中的查找](剑指offer/算法/搜索算法/2.%20Find.js)
 3. [在排序数组中查找元素的第一个和最后一个位置](Leetcode/Hot100/二分查找/3.%20searchRange.js)
 4. [搜索旋转排序数组](Leetcode/Hot100/二分查找/4.%20search.js)
-5. [寻找旋转排序数组中的最小值](Leetcode/Hot100/二分查找/5.%20findMin.js)
+5. [寻找旋转排序数组中的最小值](Leetcode/Hot100/二分查找/5.%20findMin.js)&nbsp;[旋转数组的最小数字](剑指offer/算法/搜索算法/3.%20minNumberInRotateArray.js)
+6. [寻找两个正序数组的中位数(Hard)](Leetcode/Hot100/二分查找/6.%20findMedianSortedArrays.js)
 
 ### 栈
+1. [有效的括号](Leetcode/Hot100/栈/1.%20isValid.js)
+2. [最小栈](Leetcode/Hot100/栈/2.%20MinStack.js)&nbsp;[包含min函数的栈](剑指offer/数据结构/队列&栈/2.%20TopMin.js)
+3. [字符串解码](Leetcode/Hot100/栈/3.%20decodeString.js)
+4. [每日温度](Leetcode/Hot100/栈/4.%20dailyTemperatures.js)
 
 ### 堆
 
