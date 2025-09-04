@@ -210,6 +210,8 @@
 4. [每日温度](Leetcode/Hot100/栈/4.%20dailyTemperatures.js)
 
 ### 堆
+1. [数组中的第K个最大元素](Leetcode/Hot100/堆/1.%20findKthLargest.js)
+2. [前 K 个高频元素](Leetcode/Hot100/堆/2.%20topKFrequent.js)
 
 ### 贪心算法
 
