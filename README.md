@@ -214,6 +214,9 @@
 2. [前 K 个高频元素](Leetcode/Hot100/堆/2.%20topKFrequent.js)
 
 ### 贪心算法
+1. [买卖股票的最佳时机](Leetcode/Hot100/贪心算法/1.%20isValid.js)&nbsp;[买卖股票的最好时机(一)](剑指offer/算法/动态规划/8.%20maxProfit.js)
+2. [跳跃游戏](Leetcode/Hot100/贪心算法/2.%20canJump.js)
+3. [跳跃游戏 II](Leetcode/Hot100/贪心算法/3.%20jump.js)
 
 ### 动态规划
 

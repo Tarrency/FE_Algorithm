@@ -12,6 +12,8 @@
  */
 
 // 解法1：堆
+
+// 大根堆的下沉操作，pop
 function maxHeapify(arr, i, heapSize) {
     const l = i * 2 + 1
     const r = i * 2 + 2
@@ -43,12 +45,13 @@ function findKthLargestHeap(nums, k) {
 
     buildMaxHeap(arr, heapSize)
 
-    for (let i = arr.length - 1; i >= arr.length - k + 1; i--) {
-        [arr[0], arr[i]] = [arr[i], arr[0]]
+    // 把当前最大值"移动"到了数组的已排序区域
+    for (let i = 0; i < k - 1; i++) { // 只要k-1次就行，第k次直接出结果
+        [arr[0], arr[heapSize - 1]] = [arr[heapSize - 1], arr[0]]
         heapSize--
         maxHeapify(arr, 0, heapSize)
     }
-    return arr[0]
+    return arr[0] // 第k次直接出结果，就是第k-1次的堆顶
 }
 // 时间复杂度：O(nlogn)
 // 空间复杂度：O(logn)，即递归使用栈空间的空间代价
