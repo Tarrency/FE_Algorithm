@@ -222,6 +222,7 @@
 1. [爬楼梯](Leetcode/Hot100/动态规划/1.%20climbStairs.js)&nbsp;[跳台阶](剑指offer/算法/动态规划/6.%20jumpFloorII.js)
 2. [杨辉三角](Leetcode/Hot100/动态规划/2.%generate.js)
 3. [打家劫舍](Leetcode/Hot100/动态规划/3.%rob.js)
+4. [完全平方数](Leetcode/Hot100/动态规划/4.%numSquares.js)
 
 ### 多维动态规划
 
