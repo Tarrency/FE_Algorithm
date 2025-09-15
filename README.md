@@ -115,7 +115,12 @@
 
 # 回溯框架
 1. [回溯框架](回溯框架/1.%20backtrack.js)
-  
+
+
+# 原理
+1. [设计链表]
+2. [设计哈希表]
+
 
 # Leetcode
 
@@ -194,6 +199,8 @@
 4. [组合总和](Leetcode/Hot100/回溯/4.%20combinationSum.js)
 5. [括号生成](Leetcode/Hot100/回溯/5.%20generateParenthesis.js)
 6. [单词搜索](Leetcode/Hot100/回溯/6.%20exist.js)
+7. [分割回文串](Leetcode/Hot100/回溯/7.%20partition.js)
+8. [N皇后(Hard)]
 
 ### 二分查找
 1. [搜索插入位置](Leetcode/Hot100/二分查找/1.%20searchInsert.js)
@@ -208,21 +215,26 @@
 2. [最小栈](Leetcode/Hot100/栈/2.%20MinStack.js)&nbsp;[包含min函数的栈](剑指offer/数据结构/队列&栈/2.%20TopMin.js)
 3. [字符串解码](Leetcode/Hot100/栈/3.%20decodeString.js)
 4. [每日温度](Leetcode/Hot100/栈/4.%20dailyTemperatures.js)
+5. [柱状图中最大的矩形(Hard)](Leetcode/Hot100/栈/5.%20largestRectangleArea.js)
 
 ### 堆
 1. [数组中的第K个最大元素](Leetcode/Hot100/堆/1.%20findKthLargest.js)
 2. [前 K 个高频元素](Leetcode/Hot100/堆/2.%20topKFrequent.js)
+3. [数据流的中位数(Hard)](Leetcode/Hot100/堆/3.%20MedianFinder.js)
 
 ### 贪心算法
 1. [买卖股票的最佳时机](Leetcode/Hot100/贪心算法/1.%20isValid.js)&nbsp;[买卖股票的最好时机(一)](剑指offer/算法/动态规划/8.%20maxProfit.js)
 2. [跳跃游戏](Leetcode/Hot100/贪心算法/2.%20canJump.js)
 3. [跳跃游戏 II](Leetcode/Hot100/贪心算法/3.%20jump.js)
+4. [划分字母区间](Leetcode/Hot100/贪心算法/4.%20partitionLabels.js)
 
 ### 动态规划
 1. [爬楼梯](Leetcode/Hot100/动态规划/1.%20climbStairs.js)&nbsp;[跳台阶](剑指offer/算法/动态规划/6.%20jumpFloorII.js)
 2. [杨辉三角](Leetcode/Hot100/动态规划/2.%generate.js)
 3. [打家劫舍](Leetcode/Hot100/动态规划/3.%rob.js)
 4. [完全平方数](Leetcode/Hot100/动态规划/4.%numSquares.js)
+5. [零钱兑换](Leetcode/Hot100/动态规划/5.%coinChange.js)
+6. [单词拆分](Leetcode/Hot100/动态规划/6.%wordBreak.js)
 
 ### 多维动态规划
 
