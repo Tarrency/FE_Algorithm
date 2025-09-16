@@ -235,6 +235,10 @@
 4. [完全平方数](Leetcode/Hot100/动态规划/4.%numSquares.js)
 5. [零钱兑换](Leetcode/Hot100/动态规划/5.%coinChange.js)
 6. [单词拆分](Leetcode/Hot100/动态规划/6.%wordBreak.js)
+7. [最长递增子序列](Leetcode/Hot100/动态规划/7.%lengthOfLIS.js)
+8. [乘积最大子数组](Leetcode/Hot100/动态规划/8.%maxProduct.js)
+9. [分割等和子集](Leetcode/Hot100/动态规划/9.%canPartition.js)
+10. [最长有效括号](Leetcode/Hot100/动态规划/10.%longestValidParentheses.js)
 
 ### 多维动态规划
 
