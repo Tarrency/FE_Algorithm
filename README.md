@@ -219,7 +219,7 @@
 
 ### 堆
 1. [数组中的第K个最大元素](Leetcode/Hot100/堆/1.%20findKthLargest.js)
-2. [前 K 个高频元素](Leetcode/Hot100/堆/2.%20topKFrequent.js)
+2. [前K个高频元素](Leetcode/Hot100/堆/2.%20topKFrequent.js)
 3. [数据流的中位数(Hard)](Leetcode/Hot100/堆/3.%20MedianFinder.js)
 
 ### 贪心算法
@@ -238,8 +238,10 @@
 7. [最长递增子序列](Leetcode/Hot100/动态规划/7.%lengthOfLIS.js)
 8. [乘积最大子数组](Leetcode/Hot100/动态规划/8.%maxProduct.js)
 9. [分割等和子集](Leetcode/Hot100/动态规划/9.%canPartition.js)
-10. [最长有效括号](Leetcode/Hot100/动态规划/10.%longestValidParentheses.js)
+10. [最长有效括号(Hard)](Leetcode/Hot100/动态规划/10.%longestValidParentheses.js)
 
 ### 多维动态规划
+1. [不同路径](Leetcode/Hot100/多维动态规划/1.%uniquePaths.js)
+
 
 ### 技巧
