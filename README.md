@@ -113,13 +113,10 @@
 9. [基数排序](排序专题/9.%20radixSort.js)
 
 
-# 回溯框架
-1. [回溯框架](回溯框架/1.%20backtrack.js)
-
-
-# 原理
-1. [设计链表]
-2. [设计哈希表]
+# 结构专题
+1. [回溯框架](结构专题/1.%20backtrack.js)
+2. [设计链表](结构专题/2.%20MyLinkedList.js)
+3. [设计链表](结构专题/3.%20MyLinkedList.js)
 
 
 # Leetcode
@@ -205,7 +202,7 @@
 ### 二分查找
 1. [搜索插入位置](Leetcode/Hot100/二分查找/1.%20searchInsert.js)
 2. [搜索二维矩阵](Leetcode/Hot100/二分查找/2.%20searchMatrix.js)&nbsp;[二维数组中的查找](剑指offer/算法/搜索算法/2.%20Find.js)
-3. [在排序数组中查找元素的第一个和最后一个位置](Leetcode/Hot100/二分查找/3.%20searchRange.js)
+3. [在排序数组中查找元素的第一个和最后一个位置](Leetcode/Hot100/二分查找/3.%20searchRange.js)&nbsp;[数字在升序数组中出现的次数](剑指offer/算法/搜索算法/1.%20GetNumberOfK.js)
 4. [搜索旋转排序数组](Leetcode/Hot100/二分查找/4.%20search.js)
 5. [寻找旋转排序数组中的最小值](Leetcode/Hot100/二分查找/5.%20findMin.js)&nbsp;[旋转数组的最小数字](剑指offer/算法/搜索算法/3.%20minNumberInRotateArray.js)
 6. [寻找两个正序数组的中位数(Hard)](Leetcode/Hot100/二分查找/6.%20findMedianSortedArrays.js)
@@ -220,7 +217,7 @@
 ### 堆
 1. [数组中的第K个最大元素](Leetcode/Hot100/堆/1.%20findKthLargest.js)
 2. [前K个高频元素](Leetcode/Hot100/堆/2.%20topKFrequent.js)
-3. [数据流的中位数(Hard)](Leetcode/Hot100/堆/3.%20MedianFinder.js)
+3. [数据流的中位数(Hard)](Leetcode/Hot100/堆/3.%20MedianFinder.js)&nbsp;[数据流中的中位数](剑指offer/算法/排序/4.%20GetMedian.js)
 
 ### 贪心算法
 1. [买卖股票的最佳时机](Leetcode/Hot100/贪心算法/1.%20isValid.js)&nbsp;[买卖股票的最好时机(一)](剑指offer/算法/动态规划/8.%20maxProfit.js)
@@ -241,7 +238,10 @@
 10. [最长有效括号(Hard)](Leetcode/Hot100/动态规划/10.%longestValidParentheses.js)
 
 ### 多维动态规划
-1. [不同路径](Leetcode/Hot100/多维动态规划/1.%uniquePaths.js)
+1. [不同路径](Leetcode/Hot100/多维动态规划/1.%20uniquePaths.js)
+2. [最小路径和](Leetcode/Hot100/多维动态规划/1.%20minPathSum.js)&nbsp;[礼物的最大价值](剑指offer/算法/动态规划/9.%20maxValue.js)
+3. [最长回文子串](Leetcode/Hot100/多维动态规划/3.%20longestPalindrome.js)
+
 
 
 ### 技巧
