@@ -32,5 +32,48 @@ var longestPalindrome = function(s) {
     }
     return res
 }
+// 时间复杂度：O(n²)，空间复杂度：O(1)
+
+// 解法2：DP
+var longestPalindromeDP = function(s) {
+    const n = s.length
+    if (n < 2) return s
+
+    let maxLen = 1
+    let start = 0
+
+    // 创建二维DP数组
+    const dp = new Array(n)
+    for (let i = 0; i < n; i++) {
+        dp[i] = new Array(n).fill(false)
+        dp[i][i] = true // 单个字符都是回文
+    }
+
+    // 按子串长度遍历
+    for (let L = 2; L <= n; L++) {
+        for (let i = 0; i < n; i++) {
+            const j = i + L - 1
+            if (j >= n) break
+
+            if (s[i] !== s[j]) {
+                dp[i][j] = false
+            } else {
+                if (L <= 3) { // 长度2或3
+                    dp[i][j] = true
+                } else {
+                    dp[i][j] = dp[i + 1][j - 1]
+                }
+            }
+
+            // 更新最长回文
+            if (dp[i][j] && L > maxLen) {
+                maxLen = L
+                start = i
+            }
+        }
+    }
+
+    return s.substring(start, start + maxLen)
+}
 // @lc code=end
 

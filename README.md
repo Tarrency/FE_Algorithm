@@ -115,11 +115,15 @@
 
 # 结构专题
 1. [回溯框架](结构专题/1.%20backtrack.js)
-2. [设计链表](结构专题/2.%20MyLinkedList.js)
-3. [设计链表](结构专题/3.%20MyLinkedList.js)
+2. [设计哈希集合](结构专题/2.%20MyHashSet.js)
+3. [设计哈希映射](结构专题/3.%20MyHashMap.js)
 
 
 # Leetcode
+
+## 面试常考
+1. [验证回文串](Leetcode/面试常考/1.%20isPalindrome.js)
+
 
 ## Hot100
 
