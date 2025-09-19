@@ -113,16 +113,18 @@
 9. [基数排序](排序专题/9.%20radixSort.js)
 
 
-# 结构专题
-1. [回溯框架](结构专题/1.%20backtrack.js)
-2. [设计哈希集合](结构专题/2.%20MyHashSet.js)
-3. [设计哈希映射](结构专题/3.%20MyHashMap.js)
+# 框架与数据结构
+1. [回溯框架](框架与数据结构/1.%20backtrack.js)
+2. [设计链表](框架与数据结构/2.%20MyLinkedList.js)
+3. [设计哈希集合](框架与数据结构/3.%20MyHashSet.js)
+4. [设计哈希映射](框架与数据结构/4.%20MyHashMap.js)
 
 
 # Leetcode
 
 ## 面试常考
 1. [验证回文串](Leetcode/面试常考/1.%20isPalindrome.js)
+2. [将字符串分割成值不超过 K 的子字符串](Leetcode/面试常考/2.%20minimumPartition.js)
 
 
 ## Hot100
@@ -245,6 +247,7 @@
 1. [不同路径](Leetcode/Hot100/多维动态规划/1.%20uniquePaths.js)
 2. [最小路径和](Leetcode/Hot100/多维动态规划/1.%20minPathSum.js)&nbsp;[礼物的最大价值](剑指offer/算法/动态规划/9.%20maxValue.js)
 3. [最长回文子串](Leetcode/Hot100/多维动态规划/3.%20longestPalindrome.js)
+4. [最长公共子序列](Leetcode/Hot100/多维动态规划/4.%20longestCommonSubsequence.js)
 
 
 
