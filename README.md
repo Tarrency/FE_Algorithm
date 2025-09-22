@@ -248,7 +248,10 @@
 2. [最小路径和](Leetcode/Hot100/多维动态规划/1.%20minPathSum.js)&nbsp;[礼物的最大价值](剑指offer/算法/动态规划/9.%20maxValue.js)
 3. [最长回文子串](Leetcode/Hot100/多维动态规划/3.%20longestPalindrome.js)
 4. [最长公共子序列](Leetcode/Hot100/多维动态规划/4.%20longestCommonSubsequence.js)
-
+5. [编辑距离](Leetcode/Hot100/多维动态规划/5.%20minDistance.js)
 
 
 ### 技巧
+1. [只出现一次的数字](Leetcode/Hot100/技巧/1.%20singleNumber.js)&nbsp;[数组中只出现一次的两个数字](剑指offer/算法/位运算/4.%20FindNumsAppearOnce.js)
+2. [只出现一次的数字](Leetcode/Hot100/技巧/2.%20singleNumber.js)&nbsp;[数组中出现次数超过一半的数字](剑指offer/算法/其他/5.%20MoreThanHalfNum_Solution.js)
+3. [颜色分类](Leetcode/Hot100/技巧/3.%20sortColors.js)
