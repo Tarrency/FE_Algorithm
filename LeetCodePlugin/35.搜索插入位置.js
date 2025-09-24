@@ -1,0 +1,31 @@
+/*
+ * @lc app=leetcode.cn id=35 lang=javascript
+ *
+ * [35] 搜索插入位置
+ * 输入: nums = [1,3,5,6], target = 2
+ * 输出: 1
+ */
+
+// @lc code=start
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number}
+ */
+var searchInsert = function(nums, target) {
+    let left = 0
+    let right = nums.length - 1
+    while (left <= right) {
+        const mid = Math.floor((left + right) / 2)
+        if (nums[mid] < target) {
+            left = mid + 1
+        } else if (nums[mid] > target) {
+            right = mid - 1
+        } else {
+            return mid
+        }
+    }
+    return left
+}
+// @lc code=end
+
