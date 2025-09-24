@@ -125,6 +125,8 @@
 ## 面试常考
 1. [验证回文串](Leetcode/面试常考/1.%20isPalindrome.js)
 2. [将字符串分割成值不超过 K 的子字符串](Leetcode/面试常考/2.%20minimumPartition.js)
+3. [判断子序列](Leetcode/面试常考/3.%20isSubsequence.js)
+4. [合并两个有序数组](Leetcode/面试常考/4.%20merge.js)
 
 
 ## Hot100
@@ -253,5 +255,7 @@
 
 ### 技巧
 1. [只出现一次的数字](Leetcode/Hot100/技巧/1.%20singleNumber.js)&nbsp;[数组中只出现一次的两个数字](剑指offer/算法/位运算/4.%20FindNumsAppearOnce.js)
-2. [只出现一次的数字](Leetcode/Hot100/技巧/2.%20singleNumber.js)&nbsp;[数组中出现次数超过一半的数字](剑指offer/算法/其他/5.%20MoreThanHalfNum_Solution.js)
+2. [多数元素](Leetcode/Hot100/技巧/2.%20majorityElement.js)&nbsp;[数组中出现次数超过一半的数字](剑指offer/算法/其他/5.%20MoreThanHalfNum_Solution.js)
 3. [颜色分类](Leetcode/Hot100/技巧/3.%20sortColors.js)
+4. [下一个排列](Leetcode/Hot100/技巧/4.%20nextPermutation.js)
+5. [寻找重复数](Leetcode/Hot100/技巧/5.%20findDuplicate.js)
