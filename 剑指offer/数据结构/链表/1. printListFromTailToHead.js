@@ -56,8 +56,8 @@ function printListFromTailToHead4(head) {
     }
     const arr = []
     while (stack.length) {
-        const node = stack.pop()
-        arr.push(node)
+        const nodeVal = stack.pop()
+        arr.push(nodeVal)
     }
     return arr
 }
