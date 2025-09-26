@@ -11,7 +11,7 @@
  * 返回值：{1,2,3,4,5,6}
  */
 
-// 解法1：递归，两个链表头部值较小的一个节点与剩下元素的merge操作结果合并
+// 解法1：递归，两个链表头部值较小的一个节点与剩下两个链表的merge结果进行递归连接
 function Merge(pHead1, pHead2) {
     if (!pHead1) return pHead2
     if (!pHead2) return pHead1

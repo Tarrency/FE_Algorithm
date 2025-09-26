@@ -15,6 +15,7 @@
  * 链表中倒数第k个节点
  * 输入：{1,2,3,4,5},2
  * 返回值：{4,5}
+ * 要求：空间复杂度 O(1)，时间复杂度 O(n)
  */
 
 // 解法1：快慢指针，确保距离为k，移动到末尾也相差k
@@ -22,7 +23,7 @@ function FindKthToTail1(pHead, k) {
     let fast = pHead
     let slow = pHead
     while (k--) {
-        if (!fast) return null // 链表长度小于k b
+        if (!fast) return null // 链表长度小于k
         fast = fast.next
     }
     while (fast) {

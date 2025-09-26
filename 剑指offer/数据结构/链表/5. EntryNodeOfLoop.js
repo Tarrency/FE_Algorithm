@@ -11,22 +11,8 @@
  * 要求：空间复杂度 O(1)，时间复杂度 O(n)
  */
 
-// 解法1：set找重
-function EntryNodeOfLoop1(pHead) {
-    const set = new Set()
-    while (pHead) {
-        if (set.has(pHead)) {
-            return pHead
-        }
-        set.add(pHead)
-        pHead = pHead.next
-    }
-    return null
-}
-// 空间复杂度 O(n)，时间复杂度 O(n)
-
-// 解法2：标记法
-function EntryNodeOfLoop2(pHead) {
+// 解法1：标记法
+function EntryNodeOfLoopFlag(pHead) {
     while (pHead) {
         if (pHead.flag) {
             return pHead
@@ -38,15 +24,15 @@ function EntryNodeOfLoop2(pHead) {
 }
 // 空间复杂度 O(1)，时间复杂度 O(n)
 
-// 解法3：快慢指针
-function EntryNodeOfLoop3(pHead) {
+// 解法2：快慢指针
+function EntryNodeOfLoop(pHead) {
     let fast = pHead
     let slow = pHead
     while (fast && fast.next) {
         fast = fast.next.next
         slow = slow.next
         if (fast === slow) {
-            break
+            break // 当快指针fast和慢指针slow第一次相遇时，证明链表中存在环，此时跳出循环。
         }
     }
     if (!fast || !fast.next) return null // 有种情况是链表没环，也走到头了
@@ -74,3 +60,17 @@ function EntryNodeOfLoop3(pHead) {
 // 化简得：a=(k-1)(b+c)+c,链表头到环入口的距离=相遇点到环入口的距离,最后一定相遇于环入口
 
 // 也就是说，快指针从相遇点开始一倍速走到环入口时（c），慢指针从链表头开始一倍速走到环入口（a）
+
+// 解法3：set找重
+function EntryNodeOfLoopSet(pHead) {
+    const set = new Set()
+    while (pHead) {
+        if (set.has(pHead)) {
+            return pHead
+        }
+        set.add(pHead)
+        pHead = pHead.next
+    }
+    return null
+}
+// 空间复杂度 O(n)，时间复杂度 O(n)

@@ -8,7 +8,7 @@
 4. [两个链表的第一个公共节点](剑指offer/数据结构/链表/4.%20FindFirstCommonNode.js)
 5. [链表中环的入口节点](剑指offer/数据结构/链表/5.%20EntryNodeOfLoop.js)
 6. [链表中倒数第k个节点](剑指offer/数据结构/链表/6.%20FindKthToTail.js)
-7. [复杂链表的复制](剑指offer/数据结构/链表/7.%20RandomListNode.js)
+7. [复杂链表的复制(Hard)](剑指offer/数据结构/链表/7.%20RandomListNode.js)
 8. [删除排序链表中的重复节点](剑指offer/数据结构/链表/8.%20deleteDuplication.js)
 9. [删除排序链表中的节点](剑指offer/数据结构/链表/9.%20deleteNode.js)
 
@@ -127,6 +127,7 @@
 2. [将字符串分割成值不超过 K 的子字符串](Leetcode/面试常考/2.%20minimumPartition.js)
 3. [判断子序列](Leetcode/面试常考/3.%20isSubsequence.js)
 4. [合并两个有序数组](Leetcode/面试常考/4.%20merge.js)
+5. [x 的平方根](Leetcode/面试常考/5.%20mySqrt.js)
 
 
 ## Hot100
