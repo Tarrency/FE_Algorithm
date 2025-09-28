@@ -26,5 +26,6 @@ var mySqrt = function(x) {
     }
     return res
 }
+// 时间复杂度：O(logx)，空间复杂度：O(1)
 // @lc code=end
 

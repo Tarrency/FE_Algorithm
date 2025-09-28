@@ -1,3 +1,7 @@
+# Algorithm
+【前端算法锦集】面向校招、社招er，算法题来自于牛客版剑指offer、Leetcode HOT100、Hello算法。
+
+
 # 剑指 Offer
 
 ## 数据结构
@@ -128,6 +132,9 @@
 3. [判断子序列](Leetcode/面试常考/3.%20isSubsequence.js)
 4. [合并两个有序数组](Leetcode/面试常考/4.%20merge.js)
 5. [x 的平方根](Leetcode/面试常考/5.%20mySqrt.js)
+6. [扁平化嵌套数组](Leetcode/面试常考/6.%20flat.js)
+7. [字符串相加](Leetcode/面试常考/7.%20addStrings.js)
+8. [打乱数组](Leetcode/面试常考/8.%20shuffle.js)
 
 
 ## Hot100
@@ -206,7 +213,7 @@
 5. [括号生成](Leetcode/Hot100/回溯/5.%20generateParenthesis.js)
 6. [单词搜索](Leetcode/Hot100/回溯/6.%20exist.js)
 7. [分割回文串](Leetcode/Hot100/回溯/7.%20partition.js)
-8. [N皇后(Hard)]
+8. [N皇后(Hard)]()
 
 ### 二分查找
 1. [搜索插入位置](Leetcode/Hot100/二分查找/1.%20searchInsert.js)
