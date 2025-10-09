@@ -85,3 +85,20 @@ function partitionMedianThree(nums, left, right) {
     this.swap(nums, i, left) // 将基准数交换至两子数组的分界线
     return i // 返回基准数的索引
 }
+
+// 非原地快排
+var quickSortNew = function(arr) {
+    if (arr.length <= 1) return arr // 需要添加基准情况
+
+    const pivotIndex = Math.floor(arr.length / 2)
+    const pivot = arr.splice(pivotIndex, 1)[0]
+    const left = []
+    const right = []
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < pivot) left.push(arr[i])
+        else right.push(arr[i])
+    }
+
+    return quickSort(left).concat([pivot], quickSort(right))
+}

@@ -94,5 +94,26 @@ function quickselect(nums, l, r, k) {
 // 时间复杂度：O(n)
 // 空间复杂度：O(logn)，递归使用栈空间的空间代价的期望为 O(logn)。
 
+// 解法3：经典快排，非原地排序
+var quickSort = function(arr) {
+    if (arr.length <= 1) return arr // 需要添加基准情况
+
+    const pivotIndex = Math.floor(arr.length / 2)
+    const pivot = arr.splice(pivotIndex, 1)[0]
+    const left = []
+    const right = []
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < pivot) left.push(arr[i])
+        else right.push(arr[i])
+    }
+
+    return quickSort(left).concat([pivot], quickSort(right))
+}
+function findKthLargestSort(nums, k) {
+    const res = quickSort(nums)
+    return res[n - k]
+}
+// 时间、空间复杂度：O(n log n)
 // @lc code=end
 
